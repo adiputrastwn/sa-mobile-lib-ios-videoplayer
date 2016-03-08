@@ -1,3 +1,2 @@
-SAVideoPlayer/SAVideoPlayer.podspec
-SAVideoPlayer/Example/*
-SAVideoPlayer/.travis.yml
+Example/*
+.travis.yml
