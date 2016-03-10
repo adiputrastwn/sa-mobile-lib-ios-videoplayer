@@ -10,7 +10,6 @@
 #import "SABlackMask.h"
 #import "SACronograph.h"
 #import "SAURLClicker.h"
-#import "SASpinner.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AVKit/AVKit.h>
 
@@ -45,7 +44,7 @@
 @property (nonatomic, strong) SABlackMask *mask;
 @property (nonatomic, strong) SACronograph *chrono;
 @property (nonatomic, strong) SAURLClicker *clicker;
-@property (nonatomic, strong) SASpinner *spinner;
+@property (nonatomic, strong) UIActivityIndicatorView *spinner;
 
 // states
 @property (nonatomic, assign) BOOL isReadyHandled;
@@ -144,8 +143,10 @@
     [_clicker addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [_chrome addSubview:_clicker];
 
-    _spinner = [[SASpinner alloc] init];
+    _spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    _spinner.center = _chrome.center;
     [_chrome addSubview:_spinner];
+    [_spinner startAnimating];
     _spinner.hidden = !_shouldShowSpinner;
 }
 
@@ -195,6 +196,7 @@
     [_clicker removeTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [_clicker removeFromSuperview];
     [_chrome removeFromSuperview];
+    [_spinner stopAnimating];
     [_spinner removeFromSuperview];
     _mask = NULL;
     _clicker = NULL;
@@ -393,6 +395,7 @@
             NSLog(@"Trying to reconnect ... %ld / %d", (long)_currentReconnectTries, MAX_NR_RECONNECTS);
             [self destroyPlayer];
             [self setupPlayer];
+            [self bringSubviewToFront:_chrome];
             [self playWithMediaURL:_mediaURL];
         } else {
             // destroy
