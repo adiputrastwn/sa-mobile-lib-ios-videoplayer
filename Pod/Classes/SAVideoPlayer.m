@@ -7,6 +7,7 @@
 //
 
 #import "SAVideoPlayer.h"
+#import "SAUtils.h"
 #import "SABlackMask.h"
 #import "SACronograph.h"
 #import "SAURLClicker.h"
@@ -233,6 +234,26 @@
     [_player seekToTime:kCMTimeZero];
     [_player play];
     
+    [self setObservers];
+}
+
+- (void) playWithMediaFile:(NSString *)file {
+    
+    NSString *fullPath = [SAUtils filePathInDocuments:file];
+    NSURL *url = [[NSURL alloc] initFileURLWithPath:fullPath isDirectory:false];
+    AVAsset *asset = [AVURLAsset URLAssetWithURL:url options:nil];
+    _playerItem = [AVPlayerItem playerItemWithAsset:asset];
+    _player = [AVPlayer playerWithPlayerItem:_playerItem];
+    _playerLayer = [AVPlayerLayer playerLayerWithPlayer:_player];
+    _playerLayer.frame = _videoView.bounds;
+    [_videoView.layer addSublayer:_playerLayer];
+    [_player seekToTime:kCMTimeZero];
+    [_player play];
+    
+    [self setObservers];
+}
+
+- (void) setObservers {
     [_notif addObserver:self selector:@selector(playerItemDidReachEnd:) name:AV_END object:nil];
     [_notif addObserver:self selector:@selector(playerItemFailedToPlayEndTime:) name:AV_NOEND object:nil];
     [_notif addObserver:self selector:@selector(playerItemPlaybackStall:) name:AV_STALLED object:nil];

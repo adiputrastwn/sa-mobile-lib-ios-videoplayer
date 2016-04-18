@@ -54,8 +54,11 @@
 // delegate method
 @property (nonatomic, weak) id<SAVideoPlayerProtocol> delegate;
 
-// main function
+// play with URL
 - (void) playWithMediaURL:(NSURL *)url;
+
+// play with file
+- (void) playWithMediaFile:(NSString*)file;
 
 // update
 - (void) updateToFrame:(CGRect)frame;
