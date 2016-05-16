@@ -10,7 +10,6 @@
 #import "SAUtils.h"
 #import "SABlackMask.h"
 #import "SACronograph.h"
-#import "SAURLClicker.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AVKit/AVKit.h>
 
@@ -76,27 +75,27 @@
 
 - (id) init {
     if (self = [super init]) {
-        [self setup];
         _notif = [NSNotificationCenter defaultCenter];
         _shouldShowSpinner = false;
+        _style = Fullscreen;
     }
     return self;
 }
 
 - (id) initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
-        [self setup];
         _notif = [NSNotificationCenter defaultCenter];
         _shouldShowSpinner = false;
+        _style = Fullscreen;
     }
     return self;
 }
 
 - (id) initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        [self setup];
         _notif = [NSNotificationCenter defaultCenter];
         _shouldShowSpinner = false;
+        _style = Fullscreen;
     }
     return self;
 }
@@ -141,6 +140,7 @@
     [_chrome addSubview:_chrono];
     
     _clicker = [[SAURLClicker alloc] init];
+    _clicker.style = _style;
     [_clicker addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [_chrome addSubview:_clicker];
 
@@ -225,6 +225,7 @@
 #pragma mark <Play> function
 
 - (void) playWithMediaURL:(NSURL *)url {
+    [self setup];
     _mediaURL = url;
     _playerItem = [AVPlayerItem playerItemWithURL:_mediaURL];
     _player = [AVPlayer playerWithPlayerItem:_playerItem];
@@ -238,7 +239,7 @@
 }
 
 - (void) playWithMediaFile:(NSString *)file {
-    
+    [self setup];
     NSString *fullPath = [SAUtils filePathInDocuments:file];
     NSURL *url = [[NSURL alloc] initFileURLWithPath:fullPath isDirectory:false];
     AVAsset *asset = [AVURLAsset URLAssetWithURL:url options:nil];
