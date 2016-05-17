@@ -77,7 +77,7 @@
     if (self = [super init]) {
         _notif = [NSNotificationCenter defaultCenter];
         _shouldShowSpinner = false;
-        _style = Fullscreen;
+        _shouldShowSmallClickButton = false;
     }
     return self;
 }
@@ -86,7 +86,7 @@
     if (self = [super initWithCoder:aDecoder]) {
         _notif = [NSNotificationCenter defaultCenter];
         _shouldShowSpinner = false;
-        _style = Fullscreen;
+        _shouldShowSmallClickButton = false;
     }
     return self;
 }
@@ -95,7 +95,7 @@
     if (self = [super initWithFrame:frame]) {
         _notif = [NSNotificationCenter defaultCenter];
         _shouldShowSpinner = false;
-        _style = Fullscreen;
+        _shouldShowSmallClickButton = false;
     }
     return self;
 }
@@ -140,7 +140,7 @@
     [_chrome addSubview:_chrono];
     
     _clicker = [[SAURLClicker alloc] init];
-    _clicker.style = _style;
+    _clicker.shouldShowSmallClickButton = _shouldShowSmallClickButton;
     [_clicker addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [_chrome addSubview:_clicker];
 

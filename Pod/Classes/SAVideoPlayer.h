@@ -54,7 +54,7 @@
 
 // delegate method
 @property (nonatomic, weak) id<SAVideoPlayerProtocol> delegate;
-@property (nonatomic, assign) enum ClickerStyle style;
+@property (nonatomic, assign) BOOL shouldShowSmallClickButton;
 
 // play with URL
 - (void) playWithMediaURL:(NSURL *)url;
