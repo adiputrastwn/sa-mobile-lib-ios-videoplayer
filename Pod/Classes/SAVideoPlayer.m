@@ -293,7 +293,7 @@
 }
 
 - (void) playerItemPlaybackStall: (NSNotification*)notification {
-    
+    [_player play];
 }
 
 - (void) playerItemEnterBackground: (NSNotification*)notification {
