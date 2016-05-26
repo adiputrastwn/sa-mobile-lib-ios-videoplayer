@@ -1,0 +1,17 @@
+PODS:
+  - SAUtils (1.1.4)
+  - SAVideoPlayer (1.0.4):
+    - SAUtils
+
+DEPENDENCIES:
+  - SAVideoPlayer (from `../`)
+
+EXTERNAL SOURCES:
+  SAVideoPlayer:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SAUtils: 2906e4f77507c355d53eda4ac1471bb72e2a463e
+  SAVideoPlayer: 75cd5af0b343da6cb8585269e2461a3f31ecf737
+
+COCOAPODS: 0.38.2
