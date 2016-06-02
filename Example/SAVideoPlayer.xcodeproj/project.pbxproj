@@ -509,6 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gabriel Coman (AWY9H4HC9C)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SAVideoPlayer/SAVideoPlayer-Prefix.pch";
 				INFOPLIST_FILE = "SAVideoPlayer/SAVideoPlayer-Info.plist";
@@ -516,6 +517,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bb8728a4-7b90-4de8-a229-9dbe9d5961a1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -526,6 +528,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gabriel Coman (AWY9H4HC9C)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SAVideoPlayer/SAVideoPlayer-Prefix.pch";
 				INFOPLIST_FILE = "SAVideoPlayer/SAVideoPlayer-Info.plist";
@@ -533,6 +536,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bb8728a4-7b90-4de8-a229-9dbe9d5961a1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
