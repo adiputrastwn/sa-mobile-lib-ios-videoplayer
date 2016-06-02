@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="height" constant="30" id="LJ7-Td-gRg"/>
                                     <constraint firstAttribute="width" constant="61" id="RTy-0F-uJz"/>
                                 </constraints>
-                                <state key="normal" title="Hide"/>
+                                <state key="normal" title="Pause"/>
                                 <connections>
                                     <action selector="showHideAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="TJR-0v-MqP"/>
                                 </connections>
@@ -34,7 +34,7 @@
                                     <constraint firstAttribute="height" constant="30" id="Uye-0q-nFH"/>
                                     <constraint firstAttribute="width" constant="61" id="bdA-4c-mKt"/>
                                 </constraints>
-                                <state key="normal" title="Destroy"/>
+                                <state key="normal" title="Resume"/>
                                 <connections>
                                     <action selector="destroyAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="KjK-c3-53o"/>
                                 </connections>

@@ -224,6 +224,16 @@
     [self setup];
 }
 
+#pragma mark <Resume & Pause> functions
+
+- (void) resume {
+    [_player play];
+}
+
+- (void) pause {
+    [_player pause];
+}
+
 #pragma mark <Play> function
 
 - (void) playWithMediaURL:(NSURL *)url {

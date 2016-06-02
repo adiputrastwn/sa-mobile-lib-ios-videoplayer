@@ -45,11 +45,11 @@
 }
 
 - (IBAction)showHideAction:(id)sender {
-
+    [_player pause];
 }
 
 - (IBAction)destroyAction:(id)sender {
-    [_player destroy];
+    [_player resume];
 }
 - (IBAction)resizeAction:(id)sender {
     [_player updateToFrame:CGRectMake(0, 60, 320, 220)];
