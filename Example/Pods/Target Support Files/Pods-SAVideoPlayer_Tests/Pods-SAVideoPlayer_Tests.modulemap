@@ -1,6 +1,0 @@
-framework module Pods_SAVideoPlayer_Tests {
-  umbrella header "Pods-SAVideoPlayer_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

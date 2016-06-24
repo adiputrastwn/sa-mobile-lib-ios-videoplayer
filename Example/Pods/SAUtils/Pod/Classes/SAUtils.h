@@ -35,6 +35,7 @@ typedef void (^failure)();
 ////////////////////////////////////////////////////////////////////////////////
 
 + (CGRect) mapOldFrame:(CGRect)frame toNewFrame:(CGRect)oldframe;
++ (BOOL) isRect:(CGRect)target inRect:(CGRect)frame;
 + (NSInteger) randomNumberBetween:(NSInteger)min maxNumber:(NSInteger)max;
 + (NSString*) findSubstringFrom:(NSString*)source betweenStart:(NSString*)start andEnd:(NSString*)end;
 + (NSString*) generateUniqueKey;
@@ -45,7 +46,6 @@ typedef void (^failure)();
 
 + (SASystemSize) getSystemSize;
 + (NSString*) getVerboseSystemDetails;
-+ (NSString*) filePathForName:(NSString*)name type:(NSString*)type andBundle:(NSString*)bundleName andClass:(Class)className;
 + (NSString*) filePathInDocuments:(NSString*)fpath;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -58,7 +58,22 @@ typedef void (^failure)();
 + (NSString*) encodeURI:(NSString*)stringToEncode;
 + (NSString*) encodeJSONDictionaryFromNSDictionary:(NSDictionary*)dict;
 + (NSString*) decodeHTMLEntitiesFrom:(NSString*)string;
++ (NSString*) findBaseURLFromResourceURL:(NSString*)resourceURL;
 + (BOOL) isValidURL:(NSObject*) urlObject;
+
+////////////////////////////////////////////////////////////////////////////////
+// UIImage classes
+////////////////////////////////////////////////////////////////////////////////
+
++ (UIImage*) closeImage;
++ (UIImage*) padlockImage;
+
+////////////////////////////////////////////////////////////////////////////////
+// Colors
+////////////////////////////////////////////////////////////////////////////////
+
+UIColor *UIColorFromHex (int rgbValue);
+UIColor *UIColorFromRGB (NSInteger red, NSInteger green, NSInteger blue);
 
 ////////////////////////////////////////////////////////////////////////////////
 // Aux network functions

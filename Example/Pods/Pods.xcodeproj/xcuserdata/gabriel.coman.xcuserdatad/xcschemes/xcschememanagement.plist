@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-SAVideoPlayer_Tests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>SAUtils-SAUtils.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>04E40123EA56B7E6C76F5D3DA34A0202</key>
+		<key>09C35D0495263CE53DCDDBF52DF91F5A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>34C0ED293FC2B68E4716431B5E0D4F9E</key>
+		<key>1F970F60D06AF75D9027A85D9C0238A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8706126C498652073B5A5A91053ED1D5</key>
+		<key>527ECC04A0791271D837B8740024664A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A5A429E0C9070741005F686DD8C10439</key>
+		<key>F12560DC188E77021CE62B107C4BC74A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D853CB8812FF55CDC31A837C62E40495</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DBE81CFB1710397D204E29A57DF68AFB</key>
+		<key>F63412EAD873CA4C35B3EA12B18E7FB4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

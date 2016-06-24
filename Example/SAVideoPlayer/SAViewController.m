@@ -9,6 +9,7 @@
 #import "SAViewController.h"
 #import "SAVideoPlayer.h"
 #import "SAFileDownloader.h"
+#import "SAUtils.h"
 
 @interface SAViewController () <SAVideoPlayerProtocol, NSURLConnectionDataDelegate>
 @property (nonatomic, strong) SAVideoPlayer *player;
@@ -30,9 +31,10 @@
     [[SAFileDownloader getInstance] downloadFileFrom:@"https://s-static.innovid.com/assets/26156/32233/encoded/media-2.mp4"
                                                   to:location
                                          withSuccess:^{
-                                             [_player playWithMediaFile:location];
+                                             NSString *fp = [SAUtils filePathInDocuments:location];
+                                             [_player playWithMediaFile:fp];
                                          } orFailure:^{
-    
+                                             NSLog(@"Failure!");
                                          }];
 }
 

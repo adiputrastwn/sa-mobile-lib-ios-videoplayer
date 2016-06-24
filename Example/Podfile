@@ -1,12 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
 
-target 'SAVideoPlayer_Example', :exclusive => true do
+target 'SAVideoPlayer_Example' do
   pod 'SAVideoPlayer', :path => '../'
-end
-
-target 'SAVideoPlayer_Tests', :exclusive => true do
-  pod 'SAVideoPlayer', :path => '../'
-
-  
+  pod 'SAUtils'
 end
