@@ -3,4 +3,5 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'SAVideoPlayer_Example' do
   pod 'SAVideoPlayer', :path => '../'
   pod 'SAUtils'
+  pod 'SANetworking'
 end

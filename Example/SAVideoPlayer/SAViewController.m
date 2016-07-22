@@ -43,7 +43,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)play:(id)sender {
-    [_player playWithMediaFile:_fpath];
+//    [_player playWithMediaFile:_fpath];
 }
 
 - (IBAction)showHideAction:(id)sender {
