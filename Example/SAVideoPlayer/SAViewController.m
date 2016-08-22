@@ -11,7 +11,7 @@
 #import "SAFileDownloader.h"
 #import "SAUtils.h"
 
-@interface SAViewController () <SAVideoPlayerProtocol, NSURLConnectionDataDelegate>
+@interface SAViewController () <NSURLConnectionDataDelegate>
 @property (nonatomic, strong) SAVideoPlayer *player;
 @property (nonatomic, strong) NSString *fpath;
 @end
@@ -23,19 +23,52 @@
     [super viewDidLoad];
     
     _player = [[SAVideoPlayer alloc] initWithFrame:CGRectMake(0, 60, 220, 140)];
-    _player.delegate = self;
-    _player.shouldShowSmallClickButton = true;
+    [_player showSmallClickButton];
+    [_player setClickHandler:^{
+        NSLog(@"Player clicked");
+    }];
+    [_player setEventHandler:^(SAVideoPlayerEvent event) {
+        switch (event) {
+            case Video_Start: {
+                NSLog(@"Video start");
+                break;
+            }
+            case Video_1_4: {
+                NSLog(@"Video 1/4");
+                break;
+            }
+            case Video_1_2: {
+                NSLog(@"Video 1/2");
+                break;
+            }
+            case Video_3_4: {
+                NSLog(@"Video 3/4");
+                break;
+            }
+            case Video_End: {
+                NSLog(@"Video End");
+                break;
+            }
+            case Video_Error: {
+                NSLog(@"Video Error");
+                break;
+            }
+        }
+    }];
     [self.view addSubview:_player];
     
-    __block NSString *location = [[SAFileDownloader getInstance] getDiskLocation];
-    [[SAFileDownloader getInstance] downloadFileFrom:@"https://s-static.innovid.com/assets/26156/32233/encoded/media-2.mp4"
-                                                  to:location
-                                         withSuccess:^{
-                                             NSString *fp = [SAUtils filePathInDocuments:location];
-                                             [_player playWithMediaFile:fp];
-                                         } orFailure:^{
-                                             NSLog(@"Failure!");
-                                         }];
+    SAFileDownloader *downloader = [[SAFileDownloader alloc] init];
+    __block NSString *source = @"https://s-static.innovid.com/assets/26156/32233/encoded/media-2.mp4";
+    __block NSString *destination = [SAFileDownloader getDiskLocation];
+    [downloader downloadFileFrom:source to:destination withResponse:^(BOOL success) {
+        if (success) {
+            NSString *fp = [SAUtils filePathInDocuments:destination];
+            [_player playWithMediaFile:fp];
+        } else {
+            NSLog(@"Failure!");
+        }
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,38 +88,6 @@
 }
 - (IBAction)resizeAction:(id)sender {
     [_player updateToFrame:CGRectMake(0, 60, 320, 220)];
-}
-
-- (void) didFindPlayerReady {
-    NSLog(@"didFindPlayerReady");
-}
-
-- (void) didStartPlayer {
-    NSLog(@"didStartPlayer");
-}
-
-- (void) didReachFirstQuartile {
-    NSLog(@"didReachFirstQuartile");
-}
-
-- (void) didReachMidpoint {
-    NSLog(@"didReachMidpoint");
-}
-
-- (void) didReachThirdQuartile {
-    NSLog(@"didReachThirdQuartile");
-}
-
-- (void) didReachEnd{
-    NSLog(@"didReachEnd");
-}
-
-- (void) didPlayWithError{
-    NSLog(@"didPlayWithError");
-}
-
-- (void) didGoToURL {
-    NSLog(@"didGoToURL");
 }
 
 @end

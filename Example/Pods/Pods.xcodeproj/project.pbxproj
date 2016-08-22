@@ -563,48 +563,6 @@
 			};
 			name = Release;
 		};
-		276A39FF945B709D51110E5600663FC5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE61CA3BADC698D03AF9FD63FD1A434C /* SAUtils.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SAUtils/SAUtils-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		2FEA29A1EB7AA1BAB8D68AB4FAE169C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE61CA3BADC698D03AF9FD63FD1A434C /* SAUtils.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SAUtils/SAUtils-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		34FEB2FCE4C159FEF73D822C5A9F29D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A71626C589023984B06792970DC1269E /* Pods-SAVideoPlayer_Example.debug.xcconfig */;
@@ -668,6 +626,27 @@
 			};
 			name = Debug;
 		};
+		42C0B46F5B20E2B9D8EB1F242E417D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE61CA3BADC698D03AF9FD63FD1A434C /* SAUtils.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SAUtils/SAUtils-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		51D5C90D5F0EAAEAE30E56DC46D5A025 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DC74DF78725FC873506A366420FF714E /* SAVideoPlayer.xcconfig */;
@@ -709,6 +688,27 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
+		};
+		B07B34DECE266CB7E2346918A8452B69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE61CA3BADC698D03AF9FD63FD1A434C /* SAUtils.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SAUtils/SAUtils-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 		DE401E192DE4851BF4A44F648B599911 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -823,8 +823,8 @@
 		609F0001D9E9BE4EC79A540FE34CE081 /* Build configuration list for PBXNativeTarget "SAUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FEA29A1EB7AA1BAB8D68AB4FAE169C2 /* Debug */,
-				276A39FF945B709D51110E5600663FC5 /* Release */,
+				B07B34DECE266CB7E2346918A8452B69 /* Debug */,
+				42C0B46F5B20E2B9D8EB1F242E417D85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
