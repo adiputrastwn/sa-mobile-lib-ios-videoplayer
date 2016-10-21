@@ -29,13 +29,13 @@
 }
 
 - (void) addToQueue:(SADownloadItem *)item {
-    if (item != nil && item != [NSNull null]) {
+    if (item != nil && item != (SADownloadItem*)[NSNull null]) {
         [_queue addObject:item];
     }
 }
 
 - (void) removeFromQueue:(SADownloadItem *)item {
-    if (item != nil && item != [NSNull null]) {
+    if (item != nil && item != (SADownloadItem*)[NSNull null]) {
         [_queue removeObject:item];
     }
 }

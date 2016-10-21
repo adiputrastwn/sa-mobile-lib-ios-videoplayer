@@ -10,32 +10,6 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>001D0072D53EE9BD3204B43A72582731</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_ExampleUITests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>00CAE3A34838FAF3675715CB37223E37</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_ExampleUITests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>00F89752399B53C3AE9E8500A1F0A861</key>
 		<dict>
 			<key>fileRef</key>
@@ -57,51 +31,6 @@
 			<string>Support Files</string>
 			<key>path</key>
 			<string>Example/Pods/Target Support Files/SAVideoPlayer</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>020A74349C8F10A68CCE1D21EF23F7CF</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>EB3DDEB7E20E0AE8ECD550B1804C47A2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>D619A24278E5C3E2D8E38BDDF17987EE</string>
-				<string>2D2B4C4006FCA1087EE741EA2EF79B3F</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-SAVideoPlayer_ExampleUITests</string>
-			<key>productName</key>
-			<string>Pods-SAVideoPlayer_ExampleUITests</string>
-			<key>productReference</key>
-			<string>41B996F70F89935A35FA9D579C04D666</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>02B3DF080B625C76C603CE11691F68B0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C5437D66D66EB62D3C91604F80B07AD8</string>
-				<string>ED86C83C97878BA456227C807D292A20</string>
-				<string>500AC29BBCC0EACFF42A13501664A1DF</string>
-				<string>DDF383BEC2DA8E121DA1E1C4A76B2F1C</string>
-				<string>9DFD7523AA480534A0FAA43B5CD9D3A1</string>
-				<string>4A68D9939F350D8E63E53B06AE8A66EB</string>
-				<string>856D8892AC7660A70AD7EE5A5375B42B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-SAVideoPlayer_Tests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-SAVideoPlayer_Tests</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -151,7 +80,7 @@
 			<key>productName</key>
 			<string>Pods-SAVideoPlayer_Example</string>
 			<key>productReference</key>
-			<string>5C40F409AB0C39FEB55CF50E648A2CD6</string>
+			<string>0DA3F6D738E7581EAAF77173BB43DEC5</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -209,6 +138,41 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>0B9804C70C0D08BBBDF41B1B582B7468</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AFBA33381F949FFCE3AD5C0938C0DAA0</string>
+				<string>0D16872CB1432262821AEB7D61862F34</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D16872CB1432262821AEB7D61862F34</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AE89F0B7CD3881F8B2F1552C619EBBD2</string>
+				<string>7883EBD37F804DECE4911E1C050F7A44</string>
+				<string>AA8A68D7BCD026041E5D998C3C3DF7C6</string>
+				<string>A80A196C2FE74657FF11F46BB2B4604E</string>
+				<string>5062BB9EEA5F94B067B8F38D723CA08E</string>
+				<string>ACECB7C20D0F88D0B6CBD9AA6F53ABE5</string>
+				<string>35DA31C5DB77C193D1DD6FFFB453EAE3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-SAVideoPlayer_Tests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-SAVideoPlayer_Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>0D7219921F39E1CD4FF9E45687961DA8</key>
 		<dict>
 			<key>isa</key>
@@ -221,6 +185,21 @@
 			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/SystemConfiguration.framework</string>
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>0DA3F6D738E7581EAAF77173BB43DEC5</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-SAVideoPlayer_Example.a</string>
+			<key>path</key>
+			<string>libPods-SAVideoPlayer_Example.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>0DC1C3D0C026F8CFF7CE5764ECABE2C2</key>
 		<dict>
@@ -270,7 +249,7 @@
 		<key>12568ACA40B6B1A7D51F037FEA46D654</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>856D8892AC7660A70AD7EE5A5375B42B</string>
+			<string>35DA31C5DB77C193D1DD6FFFB453EAE3</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -363,7 +342,7 @@
 		<key>1817FFF3F5027EB443DB8D52B7C64F85</key>
 		<dict>
 			<key>fileRef</key>
-			<string>26D0E94BC15A5516F21936D926C05351</string>
+			<string>4D3AA33FDC56DEF16FC7A07A306F18F2</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -467,27 +446,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>23A753492C41AEA54E8BBFDEB2D6449C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AD456463845B39D609CFAC424DA7F7F8</string>
-				<string>9682FB5114B69E6198D3853BFE5CA261</string>
-				<string>001D0072D53EE9BD3204B43A72582731</string>
-				<string>2F298FA7A4D4BE32E2AD5122D02F631D</string>
-				<string>8F31050EDA50FB5C8F57B92A22F6993A</string>
-				<string>00CAE3A34838FAF3675715CB37223E37</string>
-				<string>D0D4AB8A27EE6DCE82FEED6E4E28B33E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-SAVideoPlayer_ExampleUITests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-SAVideoPlayer_ExampleUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>256728F841D4B195703F1C0A171BF851</key>
 		<dict>
 			<key>children</key>
@@ -518,19 +476,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>26D0E94BC15A5516F21936D926C05351</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Example-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>27FC08B9374AB81C7DAB2D7AF20834BE</key>
 		<dict>
 			<key>fileRef</key>
@@ -545,24 +490,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>28785B0B8A440CBAE58F85216BD78FF4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5C40F409AB0C39FEB55CF50E648A2CD6</string>
-				<string>41B996F70F89935A35FA9D579C04D666</string>
-				<string>CF676918717E59AC2E10A4DF3700D861</string>
-				<string>2FB996F224809307EB14A6BE0166BB4D</string>
-				<string>DD436617BCCAE15FA047B33927846401</string>
-				<string>847F2DBAC63DACB1295F08B82F34F8FD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>29F81189635EC902236EEB25D2B79815</key>
 		<dict>
 			<key>fileRef</key>
@@ -570,18 +497,20 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>2D2B4C4006FCA1087EE741EA2EF79B3F</key>
+		<key>2AD3DF4E6E54FDC1D93C16DD9EB2CA65</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B16C6448119E20E98E6BF9E1A160AA94</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
 			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libSAVideoPlayer.a</string>
+			<key>path</key>
+			<string>libSAVideoPlayer.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
@@ -597,19 +526,6 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>2DF9AC2FA419CB6F34A834720A9B16CD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Example-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>2EE31EA48F24F77E39EECA891D347971</key>
 		<dict>
 			<key>fileRef</key>
@@ -623,34 +539,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>2F298FA7A4D4BE32E2AD5122D02F631D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_ExampleUITests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2FB996F224809307EB14A6BE0166BB4D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libSANetworking.a</string>
-			<key>path</key>
-			<string>libSANetworking.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>310C8AB6F70A70046C5B506BE202EEA8</key>
 		<dict>
@@ -672,10 +560,25 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>34D5247B33864F29B4D538F93378202E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libSANetworking.a</string>
+			<key>path</key>
+			<string>libSANetworking.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>34FEB2FCE4C159FEF73D822C5A9F29D4</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>DEF6E19E514601F27961F4B7230727FD</string>
+			<string>A1EB02607AE4EDAE51C4C23C226AE399</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -712,6 +615,36 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+		<key>35DA31C5DB77C193D1DD6FFFB453EAE3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-SAVideoPlayer_Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>38514DBEEDCB63B12587097D28B19D6F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0DA3F6D738E7581EAAF77173BB43DEC5</string>
+				<string>F099340FA67B0B7CD7D9ABAD0896BAE3</string>
+				<string>34D5247B33864F29B4D538F93378202E</string>
+				<string>44FD88744DE99AF0D5E19E7269E4AC77</string>
+				<string>2AD3DF4E6E54FDC1D93C16DD9EB2CA65</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3AD83492F81583F1A702E77E0BFABD00</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -746,6 +679,19 @@
 			<string>SANetworking</string>
 			<key>path</key>
 			<string>SANetworking</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3DBA6CDDDD953A4EA79E9056348D2B26</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-SAVideoPlayer_Example-resources.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -884,21 +830,6 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>41B996F70F89935A35FA9D579C04D666</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-SAVideoPlayer_ExampleUITests.a</string>
-			<key>path</key>
-			<string>libPods-SAVideoPlayer_ExampleUITests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>42196BE708C33DA74F4A7AD7844497EE</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -965,45 +896,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>446AB7D39BC08CD9504DBD84C3755088</key>
+		<key>44FD88744DE99AF0D5E19E7269E4AC77</key>
 		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D0D4AB8A27EE6DCE82FEED6E4E28B33E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
+			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>Release</string>
+			<string>libSAUtils.a</string>
+			<key>path</key>
+			<string>libSAUtils.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>46C4F5DB9782617C6CA71525BEB3EE86</key>
 		<dict>
@@ -1042,19 +948,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4A68D9939F350D8E63E53B06AE8A66EB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>4B4FD2A6947DE9A377B47915719F18D3</key>
 		<dict>
 			<key>fileRef</key>
@@ -1068,6 +961,19 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>4D3AA33FDC56DEF16FC7A07A306F18F2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-SAVideoPlayer_Example-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>4DABF2A6B55F949E51F253A682D14083</key>
 		<dict>
@@ -1099,16 +1005,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>500AC29BBCC0EACFF42A13501664A1DF</key>
+		<key>5062BB9EEA5F94B067B8F38D723CA08E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>text.script.sh</string>
 			<key>path</key>
-			<string>Pods-SAVideoPlayer_Tests-dummy.m</string>
+			<string>Pods-SAVideoPlayer_Tests-resources.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1132,7 +1038,7 @@
 			<key>productName</key>
 			<string>Pods-SAVideoPlayer_Tests</string>
 			<key>productReference</key>
-			<string>CF676918717E59AC2E10A4DF3700D861</string>
+			<string>F099340FA67B0B7CD7D9ABAD0896BAE3</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -1175,46 +1081,6 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Release</string>
-		</dict>
-		<key>54921B594F6C0E231069861C7E8EF2B4</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>00CAE3A34838FAF3675715CB37223E37</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
 		</dict>
 		<key>54D68083E833C2F413DAD4C44A2D6ABF</key>
 		<dict>
@@ -1259,21 +1125,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>5C40F409AB0C39FEB55CF50E648A2CD6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-SAVideoPlayer_Example.a</string>
-			<key>path</key>
-			<string>libPods-SAVideoPlayer_Example.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>5CB4F34948C442ACC9B1B1B1D2243A20</key>
 		<dict>
@@ -1366,7 +1217,7 @@
 			<key>productName</key>
 			<string>SAVideoPlayer</string>
 			<key>productReference</key>
-			<string>847F2DBAC63DACB1295F08B82F34F8FD</string>
+			<string>2AD3DF4E6E54FDC1D93C16DD9EB2CA65</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -1396,6 +1247,19 @@
 			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
+		</dict>
+		<key>66FDF5071E33127130EB5B58C3F5AA3A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-SAVideoPlayer_Example-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>6BADFA00A38589D20E59177BBEF62AB4</key>
 		<dict>
@@ -1435,7 +1299,7 @@
 		<key>6D9815D19D170742DC2D0D54C459040E</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>E08CAD50CF774936D10575859F4D3F28</string>
+			<string>E6C0D721AB2FBC970C05846CB1722BF6</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -1535,6 +1399,19 @@
 				</array>
 			</dict>
 		</dict>
+		<key>7883EBD37F804DECE4911E1C050F7A44</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-SAVideoPlayer_Tests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>78B2780DC857671C3448C9D92FBB8F88</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1563,23 +1440,10 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7AA06240993FDC8FA69508246E45C68E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Example-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>7AA44E03F21015C324313A065BA7858E</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>4A68D9939F350D8E63E53B06AE8A66EB</string>
+			<string>ACECB7C20D0F88D0B6CBD9AA6F53ABE5</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -1629,21 +1493,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>7D9F3325FAC55C5A6CF3D89E64C84DFC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D24BE42B6E7B56CEFFF4801DC9DDE6FF</string>
-				<string>23A753492C41AEA54E8BBFDEB2D6449C</string>
-				<string>02B3DF080B625C76C603CE11691F68B0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
 			<key>children</key>
@@ -1652,20 +1501,13 @@
 				<string>FF87ED73EECCD2C4D81D4F24798A6F34</string>
 				<string>433CD3331B6C3787F473C941B61FC68F</string>
 				<string>F5F1324260F54C8E413DCABCD11ED070</string>
-				<string>28785B0B8A440CBAE58F85216BD78FF4</string>
-				<string>7D9F3325FAC55C5A6CF3D89E64C84DFC</string>
+				<string>38514DBEEDCB63B12587097D28B19D6F</string>
+				<string>0B9804C70C0D08BBBDF41B1B582B7468</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>82E85660B362D966A1EBC515BA9853C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>001D0072D53EE9BD3204B43A72582731</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>8300F47EEB39E49255907D5DFC5B2A48</key>
 		<dict>
@@ -1679,34 +1521,6 @@
 			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>847F2DBAC63DACB1295F08B82F34F8FD</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libSAVideoPlayer.a</string>
-			<key>path</key>
-			<string>libSAVideoPlayer.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>856D8892AC7660A70AD7EE5A5375B42B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>8A7AE205BF702948434AEE174402B2D4</key>
 		<dict>
@@ -1746,19 +1560,6 @@
 			<string>Pod</string>
 			<key>path</key>
 			<string>Pod</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8F31050EDA50FB5C8F57B92A22F6993A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_ExampleUITests-resources.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1817,19 +1618,6 @@
 			<string>SOURCE_ROOT</string>
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>9682FB5114B69E6198D3853BFE5CA261</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_ExampleUITests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>968A813DB1AEF80400CB47E953953D95</key>
 		<dict>
@@ -1897,7 +1685,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>9DFD7523AA480534A0FAA43B5CD9D3A1</key>
+		<key>97BDE2B3E9ABA2F8D6D4BB14294A6362</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1906,7 +1694,7 @@
 			<key>lastKnownFileType</key>
 			<string>text.script.sh</string>
 			<key>path</key>
-			<string>Pods-SAVideoPlayer_Tests-resources.sh</string>
+			<string>Pods-SAVideoPlayer_Example-frameworks.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1937,6 +1725,19 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>A1EB02607AE4EDAE51C4C23C226AE399</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-SAVideoPlayer_Example.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>A23310C2E179EB4CAEB2B16E93BD95DA</key>
 		<dict>
 			<key>buildConfigurationList</key>
@@ -1958,7 +1759,7 @@
 			<key>productName</key>
 			<string>SANetworking</string>
 			<key>productReference</key>
-			<string>2FB996F224809307EB14A6BE0166BB4D</string>
+			<string>34D5247B33864F29B4D538F93378202E</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -1968,6 +1769,19 @@
 			<string>3EDDE96AD7696A9929F1E05442DBF214</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>A2A076E48331353345DE6D15FF9EDD9F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-SAVideoPlayer_Example-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A30A75E11204D946C5AA8E52ADF13F45</key>
 		<dict>
@@ -2005,6 +1819,32 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>A80A196C2FE74657FF11F46BB2B4604E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-SAVideoPlayer_Tests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AA8A68D7BCD026041E5D998C3C3DF7C6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-SAVideoPlayer_Tests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>AC67E38265B7828AE17F558A5DADE132</key>
 		<dict>
 			<key>fileRef</key>
@@ -2012,16 +1852,16 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>AD456463845B39D609CFAC424DA7F7F8</key>
+		<key>ACECB7C20D0F88D0B6CBD9AA6F53ABE5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text</string>
+			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>Pods-SAVideoPlayer_ExampleUITests-acknowledgements.markdown</string>
+			<string>Pods-SAVideoPlayer_Tests.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2038,6 +1878,40 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>AE89F0B7CD3881F8B2F1552C619EBBD2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-SAVideoPlayer_Tests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AFBA33381F949FFCE3AD5C0938C0DAA0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A2A076E48331353345DE6D15FF9EDD9F</string>
+				<string>66FDF5071E33127130EB5B58C3F5AA3A</string>
+				<string>4D3AA33FDC56DEF16FC7A07A306F18F2</string>
+				<string>97BDE2B3E9ABA2F8D6D4BB14294A6362</string>
+				<string>3DBA6CDDDD953A4EA79E9056348D2B26</string>
+				<string>A1EB02607AE4EDAE51C4C23C226AE399</string>
+				<string>E6C0D721AB2FBC970C05846CB1722BF6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-SAVideoPlayer_Example</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-SAVideoPlayer_Example</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>B07B34DECE266CB7E2346918A8452B69</key>
 		<dict>
@@ -2078,13 +1952,6 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Debug</string>
-		</dict>
-		<key>B16C6448119E20E98E6BF9E1A160AA94</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8300F47EEB39E49255907D5DFC5B2A48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>B1D77D531BDDEEE979D1705B7870C1FA</key>
 		<dict>
@@ -2190,23 +2057,10 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>C5437D66D66EB62D3C91604F80B07AD8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Tests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>C5F63F4B659A807AAAF87E402096F948</key>
 		<dict>
 			<key>fileRef</key>
-			<string>500AC29BBCC0EACFF42A13501664A1DF</string>
+			<string>AA8A68D7BCD026041E5D998C3C3DF7C6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -2288,21 +2142,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>CF676918717E59AC2E10A4DF3700D861</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-SAVideoPlayer_Tests.a</string>
-			<key>path</key>
-			<string>libPods-SAVideoPlayer_Tests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>CFFDCA45BEE8CECEE83097E4FAE67796</key>
 		<dict>
 			<key>fileRef</key>
@@ -2320,19 +2159,6 @@
 			<string>ECBFA326563877147716E6CB999ADA39</string>
 			<key>targetProxy</key>
 			<string>646D5752909B69334578911ABA9F69A0</string>
-		</dict>
-		<key>D0D4AB8A27EE6DCE82FEED6E4E28B33E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_ExampleUITests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D181AC6162DA2C0FA54421D722AE7896</key>
 		<dict>
@@ -2394,27 +2220,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>D24BE42B6E7B56CEFFF4801DC9DDE6FF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7AA06240993FDC8FA69508246E45C68E</string>
-				<string>EC4FF1CF6CF5F9A18688680F61528CE6</string>
-				<string>26D0E94BC15A5516F21936D926C05351</string>
-				<string>D54773B53A6156574B3D3915492C122A</string>
-				<string>2DF9AC2FA419CB6F34A834720A9B16CD</string>
-				<string>DEF6E19E514601F27961F4B7230727FD</string>
-				<string>E08CAD50CF774936D10575859F4D3F28</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-SAVideoPlayer_Example</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-SAVideoPlayer_Example</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>D2EF8FE460C37080805C4280EE959251</key>
 		<dict>
 			<key>fileRef</key>
@@ -2455,7 +2260,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>28785B0B8A440CBAE58F85216BD78FF4</string>
+			<string>38514DBEEDCB63B12587097D28B19D6F</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -2465,7 +2270,6 @@
 			<key>targets</key>
 			<array>
 				<string>06C40C95552FE6BF13037EA8912F9015</string>
-				<string>020A74349C8F10A68CCE1D21EF23F7CF</string>
 				<string>509C243EA76FBE2BD3FB52D3F35EDB01</string>
 				<string>A23310C2E179EB4CAEB2B16E93BD95DA</string>
 				<string>ECBFA326563877147716E6CB999ADA39</string>
@@ -2486,32 +2290,6 @@
 			<string>Pod/Classes/SAActivityView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D54773B53A6156574B3D3915492C122A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Example-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D619A24278E5C3E2D8E38BDDF17987EE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>82E85660B362D966A1EBC515BA9853C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>DB21E319B65848A8F994765FBD91412A</key>
 		<dict>
@@ -2538,34 +2316,6 @@
 			<string>text.xcconfig</string>
 			<key>path</key>
 			<string>SAVideoPlayer.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DD436617BCCAE15FA047B33927846401</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libSAUtils.a</string>
-			<key>path</key>
-			<string>libSAUtils.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>DDF383BEC2DA8E121DA1E1C4A76B2F1C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Tests-frameworks.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2609,32 +2359,6 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>DEF6E19E514601F27961F4B7230727FD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Example.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E08CAD50CF774936D10575859F4D3F28</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Example.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>E1DBE51354BB71DBAB166C08BA586163</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2645,6 +2369,19 @@
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>SAVideoPlayer-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E6C0D721AB2FBC970C05846CB1722BF6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-SAVideoPlayer_Example.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2695,33 +2432,6 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>EB3DDEB7E20E0AE8ECD550B1804C47A2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>54921B594F6C0E231069861C7E8EF2B4</string>
-				<string>446AB7D39BC08CD9504DBD84C3755088</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EC4FF1CF6CF5F9A18688680F61528CE6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Example-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>ECBFA326563877147716E6CB999ADA39</key>
 		<dict>
 			<key>buildConfigurationList</key>
@@ -2743,22 +2453,24 @@
 			<key>productName</key>
 			<string>SAUtils</string>
 			<key>productReference</key>
-			<string>DD436617BCCAE15FA047B33927846401</string>
+			<string>44FD88744DE99AF0D5E19E7269E4AC77</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
-		<key>ED86C83C97878BA456227C807D292A20</key>
+		<key>F099340FA67B0B7CD7D9ABAD0896BAE3</key>
 		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
 			<key>includeInIndex</key>
-			<string>1</string>
+			<string>0</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
+			<key>name</key>
+			<string>libPods-SAVideoPlayer_Tests.a</string>
 			<key>path</key>
-			<string>Pods-SAVideoPlayer_Tests-acknowledgements.plist</string>
+			<string>libPods-SAVideoPlayer_Tests.a</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>F325026B55060D3B22BEC0BAB5FA7344</key>
 		<dict>

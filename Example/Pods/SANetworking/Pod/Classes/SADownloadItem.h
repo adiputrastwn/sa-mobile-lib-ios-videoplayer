@@ -28,6 +28,7 @@
 
 // response & retry methods
 - (void) incrementNrRetries;
+- (BOOL) hasRetriesRemaining;
 - (void) clearResponses;
 - (void) addResponse:(id)response;
 

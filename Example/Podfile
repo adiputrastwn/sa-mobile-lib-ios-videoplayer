@@ -9,8 +9,4 @@ target 'SAVideoPlayer_Example' do
   target 'SAVideoPlayer_Tests' do
       inherit! :search_paths
   end
-
-  target 'SAVideoPlayer_ExampleUITests' do
-      inherit! :search_paths
-  end
 end

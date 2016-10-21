@@ -10,7 +10,6 @@
 #import "SADownloadItem.h"
 #import "SADownloadQueue.h"
 
-#define MAX_RETRIES 3
 #define TIMEOUT_INTERVAL 10
 
 @interface SAFileDownloader () <NSURLSessionDataDelegate, NSURLSessionDelegate, NSURLSessionTaskDelegate>
@@ -145,7 +144,7 @@
             
             // if the current selected item's nr of retires is less than 3, then
             // try to download it
-            if ([_currentItem nrRetries] < MAX_RETRIES) {
+            if ([_currentItem hasRetriesRemaining]) {
                 
                 NSLog(@"Start work on queue for %@ Try %ld / 3", [_currentItem diskUrl], (long)([_currentItem nrRetries] + 1));
                 

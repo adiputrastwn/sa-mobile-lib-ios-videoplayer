@@ -22,7 +22,7 @@ typedef void (^netResponse)(NSData *data, NSURLResponse *response, NSError *erro
     
     // form main URL
     __block NSMutableString *_mendpoint = [endpoint mutableCopy];
-    if (query != nil && query != [NSNull null] && query.allKeys.count > 0) {
+    if (query != nil && query != (NSDictionary*)[NSNull null] && query.allKeys.count > 0) {
         [_mendpoint appendString:@"?"];
         [_mendpoint appendString:[self formGetQueryFromDict:query]];
     }
@@ -36,14 +36,15 @@ typedef void (^netResponse)(NSData *data, NSURLResponse *response, NSError *erro
     [request setHTTPMethod:method];
     
     // set headers
-    if (header != nil && header != [NSNull null] && header.allKeys.count > 0) {
+    if (header != nil && header != (NSDictionary*)[NSNull null] && header.allKeys.count > 0) {
         for (NSString *key in header.allKeys) {
             [request setValue:[header objectForKey:key] forHTTPHeaderField:key];
         }
     }
     
     // set body, if post
-    if (([method isEqualToString:@"POST"] || [method isEqualToString:@"PUT"]) && body != nil && body != [NSNull null] && body.allKeys.count > 0) {
+    if (([method isEqualToString:@"POST"] || [method isEqualToString:@"PUT"]) &&
+         body != nil && body != (NSDictionary*)[NSNull null] && body.allKeys.count > 0) {
         request.HTTPBody = [NSJSONSerialization dataWithJSONObject:body options:NSJSONWritingPrettyPrinted error:nil];
     }
     

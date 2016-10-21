@@ -8,6 +8,8 @@
 
 #import "SADownloadItem.h"
 
+#define MAX_RETRIES 3
+
 @implementation SADownloadItem
 
 - (id) init {
@@ -52,6 +54,10 @@
     _nrRetries++;
 }
 
+- (BOOL) hasRetriesRemaining {
+    return _nrRetries < MAX_RETRIES;
+}
+
 - (void) clearResponses {
     [_responses removeAllObjects];
 }
@@ -63,7 +69,7 @@
 }
 
 - (NSString*) getNewDiskName:(NSString*) url {
-    return url != nil && url != [NSNull null] && ![url isEqualToString:@""] ? [url lastPathComponent] : nil;
+    return url != nil && url != (NSString*)[NSNull null] && ![url isEqualToString:@""] ? [url lastPathComponent] : nil;
 }
 
 - (NSString*) getDocumentsDirectory {
