@@ -9,7 +9,6 @@
 #import <XCTest/XCTest.h>
 #import "SAViewController.h"
 #import "SAVideoPlayer.h"
-#import "SAFileDownloader.h"
 
 @interface SAVideoPlayer_Tests : XCTestCase
 @property (nonatomic, strong) SAViewController *vc;
