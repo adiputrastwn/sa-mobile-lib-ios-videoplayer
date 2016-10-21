@@ -14,16 +14,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SANetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SAUtils.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>SAVideoPlayer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>06C40C95552FE6BF13037EA8912F9015</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>509C243EA76FBE2BD3FB52D3F35EDB01</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>63739BA224D03F2DDD7C2ACF49D7FE9F</key>
+		<key>6EE3AAB51FB13A3595E0C4F98611EACC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A23310C2E179EB4CAEB2B16E93BD95DA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>ECBFA326563877147716E6CB999ADA39</key>
+		<key>C88AC5CA79B4744B7501BD8D32FD5C24</key>
 		<dict>
 			<key>primary</key>
 			<true/>

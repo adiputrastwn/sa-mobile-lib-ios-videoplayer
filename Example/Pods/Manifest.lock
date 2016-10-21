@@ -1,11 +1,7 @@
 PODS:
-  - SANetworking (0.2.3)
-  - SAUtils (1.4.3)
   - SAVideoPlayer (1.1.6)
 
 DEPENDENCIES:
-  - SANetworking
-  - SAUtils
   - SAVideoPlayer (from `../`)
 
 EXTERNAL SOURCES:
@@ -13,10 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SANetworking: 18c52ed3a96572dd97313d686c4013009aa3859b
-  SAUtils: 287f4a9eaf42897fb6b5f42e40948ae572be2c5f
   SAVideoPlayer: 703ff103e6578add615aec8872396ef1d826fea5
 
-PODFILE CHECKSUM: 8585a9bbeeb7cb0bc7c22b798301ce9ad6a8ac61
+PODFILE CHECKSUM: 9f57ac83b660035f5d8a6ae7aedfbd5900507aa7
 
 COCOAPODS: 1.0.1

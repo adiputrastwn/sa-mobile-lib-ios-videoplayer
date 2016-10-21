@@ -3,8 +3,6 @@ platform :ios, '7.0'
 
 target 'SAVideoPlayer_Example' do
   pod 'SAVideoPlayer', :path => '../'
-  pod 'SAUtils'
-  pod 'SANetworking'
   
   target 'SAVideoPlayer_Tests' do
       inherit! :search_paths
