@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-SAVideoPlayer_ExampleUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SAVideoPlayer_Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SANetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,7 +37,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>020A74349C8F10A68CCE1D21EF23F7CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>06C40C95552FE6BF13037EA8912F9015</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>509C243EA76FBE2BD3FB52D3F35EDB01</key>
 		<dict>
 			<key>primary</key>
 			<true/>

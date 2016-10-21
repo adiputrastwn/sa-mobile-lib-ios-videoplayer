@@ -38,6 +38,16 @@
                ReferencedContainer = "container:SAVideoPlayer.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1B0D3E0A1DB93FEA00599351"
+               BuildableName = "SAVideoPlayer_ExampleUITests.xctest"
+               BlueprintName = "SAVideoPlayer_ExampleUITests"
+               ReferencedContainer = "container:SAVideoPlayer.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

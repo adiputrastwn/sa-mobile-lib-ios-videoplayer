@@ -9,7 +9,7 @@
 #import "SANetwork.h"
 
 // callback for iOS's own [NSURLConnection sendAsynchronousRequest:]
-typedef void (^netResponse)(NSData * data, NSURLResponse * response, NSError * error);
+typedef void (^netResponse)(NSData *data, NSURLResponse *response, NSError *error);
 
 @implementation SANetwork
 
@@ -22,7 +22,7 @@ typedef void (^netResponse)(NSData * data, NSURLResponse * response, NSError * e
     
     // form main URL
     __block NSMutableString *_mendpoint = [endpoint mutableCopy];
-    if (query != NULL && query.allKeys.count > 0) {
+    if (query != nil && query != [NSNull null] && query.allKeys.count > 0) {
         [_mendpoint appendString:@"?"];
         [_mendpoint appendString:[self formGetQueryFromDict:query]];
     }
@@ -36,14 +36,14 @@ typedef void (^netResponse)(NSData * data, NSURLResponse * response, NSError * e
     [request setHTTPMethod:method];
     
     // set headers
-    if (header != NULL && header.allKeys.count > 0) {
+    if (header != nil && header != [NSNull null] && header.allKeys.count > 0) {
         for (NSString *key in header.allKeys) {
             [request setValue:[header objectForKey:key] forHTTPHeaderField:key];
         }
     }
     
     // set body, if post
-    if ([method isEqualToString:@"POST"] && body != NULL && body.allKeys.count > 0) {
+    if (([method isEqualToString:@"POST"] || [method isEqualToString:@"PUT"]) && body != nil && body != [NSNull null] && body.allKeys.count > 0) {
         request.HTTPBody = [NSJSONSerialization dataWithJSONObject:body options:NSJSONWritingPrettyPrinted error:nil];
     }
     
@@ -51,11 +51,11 @@ typedef void (^netResponse)(NSData * data, NSURLResponse * response, NSError * e
     netResponse resp = ^(NSData *data, NSURLResponse *httpresponse, NSError *error) {
         
         // handle two failure cases
-        if (error != NULL || data == NULL) {
+        if (error != nil || data == nil) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 NSLog(@"[false] | HTTP %@ | 0 | %@", method, _mendpoint);
-                if (response != NULL) {
-                    response(0, NULL, false);
+                if (response != nil) {
+                    response(0, nil, false);
                 }
             });
             return;
@@ -68,7 +68,7 @@ typedef void (^netResponse)(NSData * data, NSURLResponse * response, NSError * e
         // send response on main thread
         dispatch_async(dispatch_get_main_queue(), ^{
             NSLog(@"[true] | HTTP %@ | %ld | %@", method, (long)status, _mendpoint);
-            if (response != NULL) {
+            if (response != nil) {
                 response(status, payload, true);
             }
         });
@@ -93,6 +93,14 @@ typedef void (^netResponse)(NSData * data, NSURLResponse * response, NSError * e
           andBody:(NSDictionary*)body
      withResponse:(response)response {
     [self sendRequestTo:endpoint withMethod:@"POST" andQuery:query andHeader:header andBody:body withResponse:response];
+}
+
+- (void) sendPUT:(NSString *)endpoint
+       withQuery:(NSDictionary *)query
+       andHeader:(NSDictionary *)header
+         andBody:(NSDictionary *)body
+    withResponse:(response)response {
+    [self sendRequestTo:endpoint withMethod:@"PUT" andQuery:query andHeader:header andBody:body withResponse:response];
 }
 
 // MARK: Private

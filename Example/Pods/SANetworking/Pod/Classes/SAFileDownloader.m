@@ -1,164 +1,322 @@
 //
-//  SAFileDownloader.m
+//  SASequentialFileDownloader.m
 //  Pods
 //
-//  Created by Gabriel Coman on 18/04/2016.
+//  Created by Gabriel Coman on 30/09/2016.
 //
 //
 
 #import "SAFileDownloader.h"
+#import "SADownloadItem.h"
+#import "SADownloadQueue.h"
 
-// callback for iOS's own [NSURLConnection sendAsynchronousRequest:]
-typedef void (^locationResponse)(NSURL * location, NSURLResponse * response, NSError * error);
+#define MAX_RETRIES 3
+#define TIMEOUT_INTERVAL 10
 
-// defines
-#define SA_FILE_STORE @"SA_FILE_STORE"
-#define PAIR_KEY @"Key"
-#define PAIR_PATH @"FPath"
+@interface SAFileDownloader () <NSURLSessionDataDelegate, NSURLSessionDelegate, NSURLSessionTaskDelegate>
 
-//
-// private vars for SAFileDownloader
-@interface SAFileDownloader ()
-// dictionary that holds all the files currently saved on disk as part of the SDK
-@property (nonatomic, strong) NSMutableDictionary *fileStore;
 @property (nonatomic, strong) NSFileManager *fileManager;
 @property (nonatomic, strong) NSUserDefaults *defs;
+@property (nonatomic, strong) SADownloadQueue *queue;
+@property (nonatomic, strong) SADownloadItem *currentItem;
+
+@property (nonatomic, strong) NSURLSessionConfiguration *defaultConfigObject;
+@property (nonatomic, strong) NSURLSession *session;
+@property (nonatomic, strong) NSURLSessionDownloadTask *task;
+
+@property (nonatomic, assign) BOOL isDownloaderBusy;
+
+@property (nonatomic, assign) NSInteger maxFileSize;
+@property (nonatomic, assign) NSInteger downloadedSize;
+
 @end
 
-//
-// actual implementation of SAFileDownloader
 @implementation SAFileDownloader
 
-#pragma mark Singleton & Constructor functions
+////////////////////////////////////////////////////////////////////////////////
+// MARK: Singleton methods
+////////////////////////////////////////////////////////////////////////////////
+
++ (instancetype) getInstance {
+    static SAFileDownloader *sharedMyManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedMyManager = [[self alloc] init];
+    });
+    return sharedMyManager;
+}
 
 - (id) init {
     if (self = [super init]) {
-        // get user defaults and file manager
+        
+        // set defs & file manager
         _defs = [NSUserDefaults standardUserDefaults];
         _fileManager = [NSFileManager defaultManager];
         
-        // get the file store
-        if ([_defs objectForKey:SA_FILE_STORE]) {
-            _fileStore = [[_defs objectForKey:SA_FILE_STORE] mutableCopy];
-        } else {
-            _fileStore = [[NSMutableDictionary alloc] init];
-        }
-        
-        // do a preliminary cleanup
+        // cleanup from past
         [self cleanup];
+        
+        // start queue & current item
+        _queue = [[SADownloadQueue alloc] init];
+        _currentItem = nil;
+        
+        // set downloader not busy
+        _isDownloaderBusy = false;
+        
+        // set default config object
+        _defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
+        
+        // set a session
+        _session = [NSURLSession sessionWithConfiguration:_defaultConfigObject
+                                                 delegate:self
+                                            delegateQueue:[NSOperationQueue mainQueue]];
     }
     
     return self;
 }
 
-#pragma mark Main Public functions
+////////////////////////////////////////////////////////////////////////////////
+// MARK: Public methods
+////////////////////////////////////////////////////////////////////////////////
 
-+ (NSString*) getDiskLocation {
-    return [NSString stringWithFormat:@"samov_%d.mp4", arc4random_uniform((uint32_t)(65536))];
-}
-
-- (void) downloadFileFrom:(NSString*)url to:(NSString*)fpath withResponse:(downloadResponse)response {
+- (void) downloadFileFrom:(NSString*)url
+              andResponse:(seqDownloadResponse)response {
     
-    // form the URL & request
-    NSURL *URL = [NSURL URLWithString:url];
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    [request setURL:URL];
-    [request setHTTPMethod:@"GET"];
-    
-    locationResponse resp2 = ^(NSURL * location, NSURLResponse * httpresponse, NSError * error) {
-        NSInteger statusCode = ((NSHTTPURLResponse*)httpresponse).statusCode;
+    // if File is already in queue
+    if ([_queue hasItemForURL:url]) {
         
-        // check for whatever error
-        if (error != NULL || statusCode != 200) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                NSLog(@"[false] | FILE GET | 0 | %@ ==> %@", url, fpath);
-                if (response) {
-                    response(false);
-                }
-            });
+        NSLog(@"File already exists for URL %@", url);
+        
+        // get item
+        SADownloadItem *item = [_queue itemForURL:url];
+        
+        // get status
+        BOOL isOnDisk = [item isOnDisk];
+        
+        // if File is already downloaded
+        if (isOnDisk) {
+            if (response != nil) {
+                response (true, [item diskName]);
+            }
         }
-        // goto success
+        // if File is not already downloaded
         else {
-            NSString *fullFilePath = [self filePathInDocuments:fpath];
-            NSString *key = [self getKeyFromLocation:fpath];
-            NSError *fileError = NULL;
-            NSURL *destURL = [NSURL fileURLWithPath:fullFilePath];
-            [_fileManager moveItemAtURL:location toURL:destURL error:&fileError];
+            [item addResponse:response];
+        }
+    }
+    // if File is not already in queue
+    else {
+        
+        NSLog(@"Adding new URL to queue %@", url);
+        
+        // create a new item
+        SADownloadItem *newItem = [[SADownloadItem alloc] initWithUrl:url
+                                                   andInitialResponse:response];
+        
+        // if the new item is valid (e.g. valid url, disk path, key, etc)
+        // then proceed with the operation
+        if ([newItem isValid]) {
             
-            if (fileError == NULL || key == NULL) {
-                // save
-                [_fileStore setObject:fpath forKey:key];
-                [_defs setObject:_fileStore forKey:SA_FILE_STORE];
-                [_defs synchronize];
-                
-                // call success
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    NSLog(@"[true] | FILE GET | 200 | %@ ==> %@", url, fpath);
-                    if (response) {
-                        response(true);
-                    }
-                });
-                
-            }
-            // failure to write file
-            else {
-                // call success
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    NSLog(@"[false] | FILE GET | 0 | %@ ==> %@", url, fpath);
-                    if (response) {
-                        response(false);
-                    }
-                });
+            // add the new item to queue
+            [_queue addToQueue:newItem];
+            
+            // check on queue
+            [self checkOnQueue];
+        }
+        // if it's not ok (e.g. invalid url) then respond w/ false
+        else {
+            if (response != nil) {
+                response (false, nil);
             }
         }
-    };
-    
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:resp2];
-    [task resume];
+    }
 }
 
-#pragma mark Private Functions
+- (void) checkOnQueue {
+    
+    // start the downloader if not busy
+    if (!_isDownloaderBusy && [_queue getLength] > 0) {
+        
+        // pop the queue
+        _currentItem = [_queue getNext];
+        
+        // if I could find a "next" item
+        if (_currentItem != nil) {
+            
+            // if the current selected item's nr of retires is less than 3, then
+            // try to download it
+            if ([_currentItem nrRetries] < MAX_RETRIES) {
+                
+                NSLog(@"Start work on queue for %@ Try %ld / 3", [_currentItem diskUrl], (long)([_currentItem nrRetries] + 1));
+                
+                // re-init state vars
+                _maxFileSize = 0;
+                _downloadedSize = 0;
+                _isDownloaderBusy = true;
+                
+                // create a new request
+                NSURL *url = [NSURL URLWithString:[_currentItem urlKey]];
+                NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+                [request setURL:url];
+                [request setTimeoutInterval: TIMEOUT_INTERVAL];
+                [request setHTTPMethod:@"GET"];
+                
+                // create the task
+                _task = [_session downloadTaskWithRequest:request];
+                
+                // start the task
+                [_task resume];
+                
+            }
+            // if I've tried for more than 3 times, just take the next item
+            else {
+                
+                // send error responses
+                for (seqDownloadResponse response in [_currentItem responses]) {
+                    response (false, nil);
+                }
+                
+                // clear responses
+                [_currentItem clearResponses];
+                
+                // permanently remove
+                [_queue removeFromQueue:_currentItem];
+                
+                // go to next on queue
+                [self checkOnQueue];
+            }
+        }
+    }
+}
 
-- (NSString*) getKeyFromLocation:(NSString*)location {
-    if (!location) return NULL;
-    NSArray *c1 = [location componentsSeparatedByString:@"_"];
-    if ([c1 count] < 2) return NULL;
-    NSString *key1 = [c1 objectAtIndex:1];
-    NSArray *c2 = [key1 componentsSeparatedByString:@"."];
-    if ([c2 count] < 1) return NULL;
-    return [c2 firstObject];
+- (void)URLSession:(NSURLSession *)session
+      downloadTask:(NSURLSessionDownloadTask *)downloadTask
+      didWriteData:(int64_t)bytesWritten
+ totalBytesWritten:(int64_t)totalBytesWritten
+totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite {
+    
+    // 1. get total
+    int64_t totali = totalBytesExpectedToWrite;
+    float total = 1.0f;
+    
+    if (totali == 0 || totali == -1) {
+        NSDictionary *responseHeaders = ((NSHTTPURLResponse *)downloadTask.response).allHeaderFields;
+        NSString *contentLength = [responseHeaders objectForKey:@"Content-Length"];
+        if (contentLength != nil) {
+            total = (float) [contentLength integerValue];
+        }
+    } else {
+        total = (float) totali;
+    }
+    
+    // 2. get current
+    float written = (float) totalBytesWritten;
+    
+    // 3. get an int percent
+    int percent = (int) ((float) ((written / total) * 100));
+    
+    // 4. print the current download status
+    if (percent % 10 == 0) {
+        NSLog(@"Downloaded %.2f %%", (float) ((written / total) * 100));
+    }
+}
+
+- (void) URLSession:(NSURLSession*) session
+       downloadTask:(nonnull NSURLSessionDownloadTask *)downloadTask
+didFinishDownloadingToURL:(nonnull NSURL *)location {
+    
+    NSLog(@"Finished %@ ==> %@", [_currentItem urlKey] , [_currentItem diskName]);
+    
+    // and a destinationURL
+    NSURL *destURL = [NSURL fileURLWithPath:[_currentItem diskUrl]];
+    
+    // move the file
+    NSError *fileError = nil;
+    [_fileManager moveItemAtURL:location toURL:destURL error:&fileError];
+    
+    // save to be able to delete afterwards
+    if (fileError == nil) {
+        [_defs setObject:[_currentItem diskName] forKey:[_currentItem key]];
+        [_defs synchronize];
+    }
+    
+    // send responses
+    for (seqDownloadResponse response in [_currentItem responses]) {
+        response (true, [_currentItem diskName]);
+    }
+    
+    // set on disk
+    [_currentItem setIsOnDisk:true];
+    
+    // clear responses
+    [_currentItem clearResponses];
+    
+    // download is not busy at the moment
+    _isDownloaderBusy = false;
+    
+    // check again for queue
+    [self checkOnQueue];
+}
+
+- (void) URLSession:(NSURLSession *)session
+               task:(NSURLSessionTask *)task
+didCompleteWithError:(NSError *)error {
+    
+    if (error) {
+        NSLog(@"Errored for %@ with %@", [_currentItem diskUrl], [error localizedDescription]);
+        
+        // set downloader not busy
+        _isDownloaderBusy = false;
+        
+        // add the current item again at the back of the queue
+        [_currentItem incrementNrRetries];
+        [_currentItem setIsOnDisk:false];
+        [_queue moveToBackOfQueue:_currentItem];
+        
+        // check on queue again
+        [self checkOnQueue];
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// MARK: Private methods to cleanup, etc
+////////////////////////////////////////////////////////////////////////////////
+
+
+- (NSString*) filePathInDocuments:(NSString*)fpath {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *basePath = paths.firstObject;
+    return [basePath stringByAppendingPathComponent:fpath];
 }
 
 - (void) cleanup {
     
-    for (NSString *key in _fileStore.allKeys) {
-        NSString *filePath = [_fileStore objectForKey:key];
-        NSString *fullFilePath = [self filePathInDocuments:filePath];
-        if ([_fileManager fileExistsAtPath:fullFilePath] && [_fileManager isDeletableFileAtPath:fullFilePath]) {
-            [_fileManager removeItemAtPath:fullFilePath error:nil];
-            NSLog(@"[true] | DEL | %@", filePath);
-        } else {
-            NSLog(@"[false] | DEL | %@", filePath);
+    NSMutableArray<NSString*> *keysToDel = [@[] mutableCopy];
+    
+    for (NSString *key in [[_defs dictionaryRepresentation] allKeys]) {
+        
+        if ([key rangeOfString:SA_KEY_PREFIX].location != NSNotFound) {
+            
+            NSString *filePath = [_defs objectForKey:key];
+            NSString *fullFilePath = [self filePathInDocuments:filePath];
+            
+            if ([_fileManager fileExistsAtPath:fullFilePath] && [_fileManager isDeletableFileAtPath:fullFilePath]) {
+                [_fileManager removeItemAtPath:fullFilePath error:nil];
+                NSLog(@"[true] | DEL | %@", filePath);
+            } else {
+                NSLog(@"[false] | DEL | %@", filePath);
+            }
+            
+            [keysToDel addObject:key];
         }
     }
     
-    // remove
-    [_fileStore removeAllObjects];
-    [_defs removeObjectForKey:SA_FILE_STORE];
+    for (NSString* key in keysToDel) {
+        [_defs removeObjectForKey:key];
+    }
     [_defs synchronize];
 }
 
-// MARK: Private
 
-- (NSString *) getDocumentsDirectory {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *basePath = paths.firstObject;
-    return basePath;
-}
-
-- (NSString*) filePathInDocuments:(NSString*)fpath {
-    return [[self getDocumentsDirectory] stringByAppendingPathComponent:fpath];
-}
 
 @end
