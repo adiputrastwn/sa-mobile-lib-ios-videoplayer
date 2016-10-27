@@ -1,1422 +1,617 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>004559C5DC77545C63A300F42D91A678</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libSAVideoPlayer.a</string>
-			<key>path</key>
-			<string>libSAVideoPlayer.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>01973C66F89D421E96BD653973580970</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DC74DF78725FC873506A366420FF714E</string>
-				<string>CB680816E65D7EE69E6FAFA3E24067D8</string>
-				<string>E1DBE51354BB71DBAB166C08BA586163</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/SAVideoPlayer</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>08DBD44C67ACB0ABEE14585253A39CC4</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6BFD1AE7C06950F19B07901DFF884524</string>
-				<string>5EBDD9A276313AAAA40EE62609C9444D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0B9804C70C0D08BBBDF41B1B582B7468</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AFBA33381F949FFCE3AD5C0938C0DAA0</string>
-				<string>0D16872CB1432262821AEB7D61862F34</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0D16872CB1432262821AEB7D61862F34</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AE89F0B7CD3881F8B2F1552C619EBBD2</string>
-				<string>7883EBD37F804DECE4911E1C050F7A44</string>
-				<string>AA8A68D7BCD026041E5D998C3C3DF7C6</string>
-				<string>A80A196C2FE74657FF11F46BB2B4604E</string>
-				<string>5062BB9EEA5F94B067B8F38D723CA08E</string>
-				<string>ACECB7C20D0F88D0B6CBD9AA6F53ABE5</string>
-				<string>35DA31C5DB77C193D1DD6FFFB453EAE3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-SAVideoPlayer_Tests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-SAVideoPlayer_Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>12568ACA40B6B1A7D51F037FEA46D654</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>35DA31C5DB77C193D1DD6FFFB453EAE3</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>14DA9D72F915C281674E518E9CCFD7C3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SAURLClicker.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>16F5E02314A471CE20454E5733D28837</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DC74DF78725FC873506A366420FF714E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/SAVideoPlayer/SAVideoPlayer-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>17D298908D4CB5C37BDBC5A5F0DDACAA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SAVideoPlayer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1B66356829AFA879B1131A00F20D3240</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>7B15BA41BE08C189CDB53E765A46B935</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1F3034028EE670A58F2048FB937FC01B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SABlackMask.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1F54D3ED48A305E45581C1FB8920D4D5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SACronograph.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>20FE2E4F8FF0FFC31CE0B47C11A5B5A2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8B20A9C388858457D86AD9F037504D03</string>
-				<string>01973C66F89D421E96BD653973580970</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SAVideoPlayer</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>252039C04175EFC5A2B97EC71A081BE4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4D3AA33FDC56DEF16FC7A07A306F18F2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2A3362FBE0BC2519289C8E389B436C15</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1F3034028EE670A58F2048FB937FC01B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>2C5340CA4ADF98D7BE59EBAB4AD9E7EC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>729C9C08000C0F9E8C791A72A09D4D87</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3FA2475660FFC880302AD18E29B2E5FC</string>
-				<string>F325026B55060D3B22BEC0BAB5FA7344</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>2F32AD87968137319DDFE10F14B408D4</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-SAVideoPlayer_Example.a</string>
-			<key>path</key>
-			<string>libPods-SAVideoPlayer_Example.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>35DA31C5DB77C193D1DD6FFFB453EAE3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3917265BADB42C3341D4FE7D2DDA0E8A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1F54D3ED48A305E45581C1FB8920D4D5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>3DBA6CDDDD953A4EA79E9056348D2B26</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Example-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3DCAB2B7CDE207B3958B6CB957FCC758</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3FA2475660FFC880302AD18E29B2E5FC</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>POD_CONFIGURATION_DEBUG=1</string>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>41F79ACBC9D575F229261D3EE9F8232A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CF99C4595333495C5196EE864F6AD899</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>42196BE708C33DA74F4A7AD7844497EE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SAURLClicker.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>451CDA3032E38D5EF378025A095A03BF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>14DA9D72F915C281674E518E9CCFD7C3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>47BB172B1CB53DCBF62A9D99888CEB22</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SACronograph.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4D3AA33FDC56DEF16FC7A07A306F18F2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Example-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5062BB9EEA5F94B067B8F38D723CA08E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Tests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>509C243EA76FBE2BD3FB52D3F35EDB01</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>65A0CCD4F9AA0BD4F979AFC9DAFE3AA1</string>
-			<key>buildPhases</key>
-			<array>
-				<string>C434F6DA6C22EF9CC93A548C3F67BEBB</string>
-				<string>62CCAE7B05C8AEFFB86731A8E6A23DB3</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-SAVideoPlayer_Tests</string>
-			<key>productName</key>
-			<string>Pods-SAVideoPlayer_Tests</string>
-			<key>productReference</key>
-			<string>627128B8F088751E111026445E766E68</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>52A6A2FD415EA30D63E771F89AA8D9C0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D181AC6162DA2C0FA54421D722AE7896</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>5D0BA7CA94EDE1D65C9BEF7BB8C8590F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>252039C04175EFC5A2B97EC71A081BE4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>5EBDD9A276313AAAA40EE62609C9444D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E6C0D721AB2FBC970C05846CB1722BF6</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>627128B8F088751E111026445E766E68</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-SAVideoPlayer_Tests.a</string>
-			<key>path</key>
-			<string>libPods-SAVideoPlayer_Tests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>62CCAE7B05C8AEFFB86731A8E6A23DB3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A073E2156A12CDE5C5BE992E1E8F3693</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>65A0CCD4F9AA0BD4F979AFC9DAFE3AA1</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>7AA44E03F21015C324313A065BA7858E</string>
-				<string>12568ACA40B6B1A7D51F037FEA46D654</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>66FDF5071E33127130EB5B58C3F5AA3A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Example-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6BFD1AE7C06950F19B07901DFF884524</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>A1EB02607AE4EDAE51C4C23C226AE399</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>6C7006C70DAECA48C95D9C48A49D9F81</key>
-		<dict>
-			<key>fileRef</key>
-			<string>42196BE708C33DA74F4A7AD7844497EE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>6EE3AAB51FB13A3595E0C4F98611EACC</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>08DBD44C67ACB0ABEE14585253A39CC4</string>
-			<key>buildPhases</key>
-			<array>
-				<string>5D0BA7CA94EDE1D65C9BEF7BB8C8590F</string>
-				<string>1B66356829AFA879B1131A00F20D3240</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>E8C870E0C9F2E0B63A08779AD1B30AB3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-SAVideoPlayer_Example</string>
-			<key>productName</key>
-			<string>Pods-SAVideoPlayer_Example</string>
-			<key>productReference</key>
-			<string>2F32AD87968137319DDFE10F14B408D4</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>729C9C08000C0F9E8C791A72A09D4D87</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SABlackMask.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7883EBD37F804DECE4911E1C050F7A44</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Tests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7AA44E03F21015C324313A065BA7858E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>ACECB7C20D0F88D0B6CBD9AA6F53ABE5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>7B15BA41BE08C189CDB53E765A46B935</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7C3C293D3A8F706F86139C7F2FFA7E91</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CB680816E65D7EE69E6FAFA3E24067D8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
-				<string>FF87ED73EECCD2C4D81D4F24798A6F34</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>B95604C373A7C42D4C5D19D45D1B9ED7</string>
-				<string>0B9804C70C0D08BBBDF41B1B582B7468</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>800931841237D0E13ED6061B051B43A1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>17D298908D4CB5C37BDBC5A5F0DDACAA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8B20A9C388858457D86AD9F037504D03</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CF2276FD21F09B573EA4644E91CCA11A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pod</string>
-			<key>path</key>
-			<string>Pod</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>text.script.ruby</string>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>97BDE2B3E9ABA2F8D6D4BB14294A6362</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Example-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A073E2156A12CDE5C5BE992E1E8F3693</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A1EB02607AE4EDAE51C4C23C226AE399</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Example.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A2A076E48331353345DE6D15FF9EDD9F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Example-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A80A196C2FE74657FF11F46BB2B4604E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Tests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AA8A68D7BCD026041E5D998C3C3DF7C6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Tests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB77ABC47539DC3F7337098A2BD44518</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>C88AC5CA79B4744B7501BD8D32FD5C24</string>
-			<key>remoteInfo</key>
-			<string>SAVideoPlayer</string>
-		</dict>
-		<key>ACECB7C20D0F88D0B6CBD9AA6F53ABE5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AE89F0B7CD3881F8B2F1552C619EBBD2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Tests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AFBA33381F949FFCE3AD5C0938C0DAA0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A2A076E48331353345DE6D15FF9EDD9F</string>
-				<string>66FDF5071E33127130EB5B58C3F5AA3A</string>
-				<string>4D3AA33FDC56DEF16FC7A07A306F18F2</string>
-				<string>97BDE2B3E9ABA2F8D6D4BB14294A6362</string>
-				<string>3DBA6CDDDD953A4EA79E9056348D2B26</string>
-				<string>A1EB02607AE4EDAE51C4C23C226AE399</string>
-				<string>E6C0D721AB2FBC970C05846CB1722BF6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-SAVideoPlayer_Example</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-SAVideoPlayer_Example</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B2F58AF7C4517D0D07119061169E296C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B53C426F61066FD513B12CAC8EBBC74D</string>
-				<string>16F5E02314A471CE20454E5733D28837</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B53C426F61066FD513B12CAC8EBBC74D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DC74DF78725FC873506A366420FF714E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/SAVideoPlayer/SAVideoPlayer-prefix.pch</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B95604C373A7C42D4C5D19D45D1B9ED7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2F32AD87968137319DDFE10F14B408D4</string>
-				<string>627128B8F088751E111026445E766E68</string>
-				<string>004559C5DC77545C63A300F42D91A678</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3DCAB2B7CDE207B3958B6CB957FCC758</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BDA936458B3725519693953841E1E94C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>47BB172B1CB53DCBF62A9D99888CEB22</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C434F6DA6C22EF9CC93A548C3F67BEBB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C5F63F4B659A807AAAF87E402096F948</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C5F63F4B659A807AAAF87E402096F948</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AA8A68D7BCD026041E5D998C3C3DF7C6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C88AC5CA79B4744B7501BD8D32FD5C24</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>B2F58AF7C4517D0D07119061169E296C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>C8FBCC72EECE343097A23C6FC592DE29</string>
-				<string>41F79ACBC9D575F229261D3EE9F8232A</string>
-				<string>E9D37EE1C69F1D777856216AC3B55950</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>SAVideoPlayer</string>
-			<key>productName</key>
-			<string>SAVideoPlayer</string>
-			<key>productReference</key>
-			<string>004559C5DC77545C63A300F42D91A678</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>C8FBCC72EECE343097A23C6FC592DE29</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2C5340CA4ADF98D7BE59EBAB4AD9E7EC</string>
-				<string>BDA936458B3725519693953841E1E94C</string>
-				<string>451CDA3032E38D5EF378025A095A03BF</string>
-				<string>7C3C293D3A8F706F86139C7F2FFA7E91</string>
-				<string>800931841237D0E13ED6061B051B43A1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CB680816E65D7EE69E6FAFA3E24067D8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SAVideoPlayer-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CEC22C73C1608DFA5D5D78BDCB218219</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>CF2276FD21F09B573EA4644E91CCA11A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1F3034028EE670A58F2048FB937FC01B</string>
-				<string>729C9C08000C0F9E8C791A72A09D4D87</string>
-				<string>1F54D3ED48A305E45581C1FB8920D4D5</string>
-				<string>47BB172B1CB53DCBF62A9D99888CEB22</string>
-				<string>42196BE708C33DA74F4A7AD7844497EE</string>
-				<string>14DA9D72F915C281674E518E9CCFD7C3</string>
-				<string>D181AC6162DA2C0FA54421D722AE7896</string>
-				<string>17D298908D4CB5C37BDBC5A5F0DDACAA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CF99C4595333495C5196EE864F6AD899</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D181AC6162DA2C0FA54421D722AE7896</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SAVideoPlayer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>B95604C373A7C42D4C5D19D45D1B9ED7</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>6EE3AAB51FB13A3595E0C4F98611EACC</string>
-				<string>509C243EA76FBE2BD3FB52D3F35EDB01</string>
-				<string>C88AC5CA79B4744B7501BD8D32FD5C24</string>
-			</array>
-		</dict>
-		<key>DC74DF78725FC873506A366420FF714E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>SAVideoPlayer.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1DBE51354BB71DBAB166C08BA586163</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SAVideoPlayer-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6C0D721AB2FBC970C05846CB1722BF6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SAVideoPlayer_Example.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8C870E0C9F2E0B63A08779AD1B30AB3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>SAVideoPlayer</string>
-			<key>target</key>
-			<string>C88AC5CA79B4744B7501BD8D32FD5C24</string>
-			<key>targetProxy</key>
-			<string>AB77ABC47539DC3F7337098A2BD44518</string>
-		</dict>
-		<key>E9D37EE1C69F1D777856216AC3B55950</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2A3362FBE0BC2519289C8E389B436C15</string>
-				<string>3917265BADB42C3341D4FE7D2DDA0E8A</string>
-				<string>6C7006C70DAECA48C95D9C48A49D9F81</string>
-				<string>52A6A2FD415EA30D63E771F89AA8D9C0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F325026B55060D3B22BEC0BAB5FA7344</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>POD_CONFIGURATION_RELEASE=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FF87ED73EECCD2C4D81D4F24798A6F34</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>20FE2E4F8FF0FFC31CE0B47C11A5B5A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		252039C04175EFC5A2B97EC71A081BE4 /* Pods-SAVideoPlayer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3AA33FDC56DEF16FC7A07A306F18F2 /* Pods-SAVideoPlayer_Example-dummy.m */; };
+		2A3362FBE0BC2519289C8E389B436C15 /* SABlackMask.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F3034028EE670A58F2048FB937FC01B /* SABlackMask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C5340CA4ADF98D7BE59EBAB4AD9E7EC /* SABlackMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 729C9C08000C0F9E8C791A72A09D4D87 /* SABlackMask.m */; };
+		3917265BADB42C3341D4FE7D2DDA0E8A /* SACronograph.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F54D3ED48A305E45581C1FB8920D4D5 /* SACronograph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		451CDA3032E38D5EF378025A095A03BF /* SAURLClicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DA9D72F915C281674E518E9CCFD7C3 /* SAURLClicker.m */; };
+		52A6A2FD415EA30D63E771F89AA8D9C0 /* SAVideoPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D181AC6162DA2C0FA54421D722AE7896 /* SAVideoPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C7006C70DAECA48C95D9C48A49D9F81 /* SAURLClicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 42196BE708C33DA74F4A7AD7844497EE /* SAURLClicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B15BA41BE08C189CDB53E765A46B935 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		7C3C293D3A8F706F86139C7F2FFA7E91 /* SAVideoPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB680816E65D7EE69E6FAFA3E24067D8 /* SAVideoPlayer-dummy.m */; };
+		800931841237D0E13ED6061B051B43A1 /* SAVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D298908D4CB5C37BDBC5A5F0DDACAA /* SAVideoPlayer.m */; };
+		A073E2156A12CDE5C5BE992E1E8F3693 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		BDA936458B3725519693953841E1E94C /* SACronograph.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BB172B1CB53DCBF62A9D99888CEB22 /* SACronograph.m */; };
+		C5F63F4B659A807AAAF87E402096F948 /* Pods-SAVideoPlayer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8A68D7BCD026041E5D998C3C3DF7C6 /* Pods-SAVideoPlayer_Tests-dummy.m */; };
+		CF99C4595333495C5196EE864F6AD899 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB77ABC47539DC3F7337098A2BD44518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C88AC5CA79B4744B7501BD8D32FD5C24;
+			remoteInfo = SAVideoPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		004559C5DC77545C63A300F42D91A678 /* libSAVideoPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSAVideoPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DA9D72F915C281674E518E9CCFD7C3 /* SAURLClicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SAURLClicker.m; sourceTree = "<group>"; };
+		17D298908D4CB5C37BDBC5A5F0DDACAA /* SAVideoPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SAVideoPlayer.m; sourceTree = "<group>"; };
+		1F3034028EE670A58F2048FB937FC01B /* SABlackMask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SABlackMask.h; sourceTree = "<group>"; };
+		1F54D3ED48A305E45581C1FB8920D4D5 /* SACronograph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SACronograph.h; sourceTree = "<group>"; };
+		2F32AD87968137319DDFE10F14B408D4 /* libPods-SAVideoPlayer_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SAVideoPlayer_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DA31C5DB77C193D1DD6FFFB453EAE3 /* Pods-SAVideoPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SAVideoPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3DBA6CDDDD953A4EA79E9056348D2B26 /* Pods-SAVideoPlayer_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SAVideoPlayer_Example-resources.sh"; sourceTree = "<group>"; };
+		42196BE708C33DA74F4A7AD7844497EE /* SAURLClicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SAURLClicker.h; sourceTree = "<group>"; };
+		47BB172B1CB53DCBF62A9D99888CEB22 /* SACronograph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SACronograph.m; sourceTree = "<group>"; };
+		4D3AA33FDC56DEF16FC7A07A306F18F2 /* Pods-SAVideoPlayer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SAVideoPlayer_Example-dummy.m"; sourceTree = "<group>"; };
+		5062BB9EEA5F94B067B8F38D723CA08E /* Pods-SAVideoPlayer_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SAVideoPlayer_Tests-resources.sh"; sourceTree = "<group>"; };
+		627128B8F088751E111026445E766E68 /* libPods-SAVideoPlayer_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SAVideoPlayer_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66FDF5071E33127130EB5B58C3F5AA3A /* Pods-SAVideoPlayer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SAVideoPlayer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		729C9C08000C0F9E8C791A72A09D4D87 /* SABlackMask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SABlackMask.m; sourceTree = "<group>"; };
+		7883EBD37F804DECE4911E1C050F7A44 /* Pods-SAVideoPlayer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SAVideoPlayer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97BDE2B3E9ABA2F8D6D4BB14294A6362 /* Pods-SAVideoPlayer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SAVideoPlayer_Example-frameworks.sh"; sourceTree = "<group>"; };
+		A1EB02607AE4EDAE51C4C23C226AE399 /* Pods-SAVideoPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SAVideoPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A2A076E48331353345DE6D15FF9EDD9F /* Pods-SAVideoPlayer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SAVideoPlayer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A80A196C2FE74657FF11F46BB2B4604E /* Pods-SAVideoPlayer_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SAVideoPlayer_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		AA8A68D7BCD026041E5D998C3C3DF7C6 /* Pods-SAVideoPlayer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SAVideoPlayer_Tests-dummy.m"; sourceTree = "<group>"; };
+		ACECB7C20D0F88D0B6CBD9AA6F53ABE5 /* Pods-SAVideoPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SAVideoPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE89F0B7CD3881F8B2F1552C619EBBD2 /* Pods-SAVideoPlayer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SAVideoPlayer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CB680816E65D7EE69E6FAFA3E24067D8 /* SAVideoPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAVideoPlayer-dummy.m"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D181AC6162DA2C0FA54421D722AE7896 /* SAVideoPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SAVideoPlayer.h; sourceTree = "<group>"; };
+		DC74DF78725FC873506A366420FF714E /* SAVideoPlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAVideoPlayer.xcconfig; sourceTree = "<group>"; };
+		E1DBE51354BB71DBAB166C08BA586163 /* SAVideoPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAVideoPlayer-prefix.pch"; sourceTree = "<group>"; };
+		E6C0D721AB2FBC970C05846CB1722BF6 /* Pods-SAVideoPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SAVideoPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B66356829AFA879B1131A00F20D3240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B15BA41BE08C189CDB53E765A46B935 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41F79ACBC9D575F229261D3EE9F8232A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF99C4595333495C5196EE864F6AD899 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CCAE7B05C8AEFFB86731A8E6A23DB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A073E2156A12CDE5C5BE992E1E8F3693 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01973C66F89D421E96BD653973580970 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC74DF78725FC873506A366420FF714E /* SAVideoPlayer.xcconfig */,
+				CB680816E65D7EE69E6FAFA3E24067D8 /* SAVideoPlayer-dummy.m */,
+				E1DBE51354BB71DBAB166C08BA586163 /* SAVideoPlayer-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SAVideoPlayer";
+			sourceTree = "<group>";
+		};
+		0B9804C70C0D08BBBDF41B1B582B7468 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFBA33381F949FFCE3AD5C0938C0DAA0 /* Pods-SAVideoPlayer_Example */,
+				0D16872CB1432262821AEB7D61862F34 /* Pods-SAVideoPlayer_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0D16872CB1432262821AEB7D61862F34 /* Pods-SAVideoPlayer_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AE89F0B7CD3881F8B2F1552C619EBBD2 /* Pods-SAVideoPlayer_Tests-acknowledgements.markdown */,
+				7883EBD37F804DECE4911E1C050F7A44 /* Pods-SAVideoPlayer_Tests-acknowledgements.plist */,
+				AA8A68D7BCD026041E5D998C3C3DF7C6 /* Pods-SAVideoPlayer_Tests-dummy.m */,
+				A80A196C2FE74657FF11F46BB2B4604E /* Pods-SAVideoPlayer_Tests-frameworks.sh */,
+				5062BB9EEA5F94B067B8F38D723CA08E /* Pods-SAVideoPlayer_Tests-resources.sh */,
+				ACECB7C20D0F88D0B6CBD9AA6F53ABE5 /* Pods-SAVideoPlayer_Tests.debug.xcconfig */,
+				35DA31C5DB77C193D1DD6FFFB453EAE3 /* Pods-SAVideoPlayer_Tests.release.xcconfig */,
+			);
+			name = "Pods-SAVideoPlayer_Tests";
+			path = "Target Support Files/Pods-SAVideoPlayer_Tests";
+			sourceTree = "<group>";
+		};
+		20FE2E4F8FF0FFC31CE0B47C11A5B5A2 /* SAVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8B20A9C388858457D86AD9F037504D03 /* Pod */,
+				01973C66F89D421E96BD653973580970 /* Support Files */,
+			);
+			name = SAVideoPlayer;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				FF87ED73EECCD2C4D81D4F24798A6F34 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B95604C373A7C42D4C5D19D45D1B9ED7 /* Products */,
+				0B9804C70C0D08BBBDF41B1B582B7468 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B20A9C388858457D86AD9F037504D03 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CF2276FD21F09B573EA4644E91CCA11A /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		AFBA33381F949FFCE3AD5C0938C0DAA0 /* Pods-SAVideoPlayer_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A2A076E48331353345DE6D15FF9EDD9F /* Pods-SAVideoPlayer_Example-acknowledgements.markdown */,
+				66FDF5071E33127130EB5B58C3F5AA3A /* Pods-SAVideoPlayer_Example-acknowledgements.plist */,
+				4D3AA33FDC56DEF16FC7A07A306F18F2 /* Pods-SAVideoPlayer_Example-dummy.m */,
+				97BDE2B3E9ABA2F8D6D4BB14294A6362 /* Pods-SAVideoPlayer_Example-frameworks.sh */,
+				3DBA6CDDDD953A4EA79E9056348D2B26 /* Pods-SAVideoPlayer_Example-resources.sh */,
+				A1EB02607AE4EDAE51C4C23C226AE399 /* Pods-SAVideoPlayer_Example.debug.xcconfig */,
+				E6C0D721AB2FBC970C05846CB1722BF6 /* Pods-SAVideoPlayer_Example.release.xcconfig */,
+			);
+			name = "Pods-SAVideoPlayer_Example";
+			path = "Target Support Files/Pods-SAVideoPlayer_Example";
+			sourceTree = "<group>";
+		};
+		B95604C373A7C42D4C5D19D45D1B9ED7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F32AD87968137319DDFE10F14B408D4 /* libPods-SAVideoPlayer_Example.a */,
+				627128B8F088751E111026445E766E68 /* libPods-SAVideoPlayer_Tests.a */,
+				004559C5DC77545C63A300F42D91A678 /* libSAVideoPlayer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF2276FD21F09B573EA4644E91CCA11A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1F3034028EE670A58F2048FB937FC01B /* SABlackMask.h */,
+				729C9C08000C0F9E8C791A72A09D4D87 /* SABlackMask.m */,
+				1F54D3ED48A305E45581C1FB8920D4D5 /* SACronograph.h */,
+				47BB172B1CB53DCBF62A9D99888CEB22 /* SACronograph.m */,
+				42196BE708C33DA74F4A7AD7844497EE /* SAURLClicker.h */,
+				14DA9D72F915C281674E518E9CCFD7C3 /* SAURLClicker.m */,
+				D181AC6162DA2C0FA54421D722AE7896 /* SAVideoPlayer.h */,
+				17D298908D4CB5C37BDBC5A5F0DDACAA /* SAVideoPlayer.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FF87ED73EECCD2C4D81D4F24798A6F34 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20FE2E4F8FF0FFC31CE0B47C11A5B5A2 /* SAVideoPlayer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E9D37EE1C69F1D777856216AC3B55950 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3362FBE0BC2519289C8E389B436C15 /* SABlackMask.h in Headers */,
+				3917265BADB42C3341D4FE7D2DDA0E8A /* SACronograph.h in Headers */,
+				6C7006C70DAECA48C95D9C48A49D9F81 /* SAURLClicker.h in Headers */,
+				52A6A2FD415EA30D63E771F89AA8D9C0 /* SAVideoPlayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		509C243EA76FBE2BD3FB52D3F35EDB01 /* Pods-SAVideoPlayer_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65A0CCD4F9AA0BD4F979AFC9DAFE3AA1 /* Build configuration list for PBXNativeTarget "Pods-SAVideoPlayer_Tests" */;
+			buildPhases = (
+				C434F6DA6C22EF9CC93A548C3F67BEBB /* Sources */,
+				62CCAE7B05C8AEFFB86731A8E6A23DB3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SAVideoPlayer_Tests";
+			productName = "Pods-SAVideoPlayer_Tests";
+			productReference = 627128B8F088751E111026445E766E68 /* libPods-SAVideoPlayer_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6EE3AAB51FB13A3595E0C4F98611EACC /* Pods-SAVideoPlayer_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08DBD44C67ACB0ABEE14585253A39CC4 /* Build configuration list for PBXNativeTarget "Pods-SAVideoPlayer_Example" */;
+			buildPhases = (
+				5D0BA7CA94EDE1D65C9BEF7BB8C8590F /* Sources */,
+				1B66356829AFA879B1131A00F20D3240 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8C870E0C9F2E0B63A08779AD1B30AB3 /* PBXTargetDependency */,
+			);
+			name = "Pods-SAVideoPlayer_Example";
+			productName = "Pods-SAVideoPlayer_Example";
+			productReference = 2F32AD87968137319DDFE10F14B408D4 /* libPods-SAVideoPlayer_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C88AC5CA79B4744B7501BD8D32FD5C24 /* SAVideoPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2F58AF7C4517D0D07119061169E296C /* Build configuration list for PBXNativeTarget "SAVideoPlayer" */;
+			buildPhases = (
+				C8FBCC72EECE343097A23C6FC592DE29 /* Sources */,
+				41F79ACBC9D575F229261D3EE9F8232A /* Frameworks */,
+				E9D37EE1C69F1D777856216AC3B55950 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAVideoPlayer;
+			productName = SAVideoPlayer;
+			productReference = 004559C5DC77545C63A300F42D91A678 /* libSAVideoPlayer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B95604C373A7C42D4C5D19D45D1B9ED7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EE3AAB51FB13A3595E0C4F98611EACC /* Pods-SAVideoPlayer_Example */,
+				509C243EA76FBE2BD3FB52D3F35EDB01 /* Pods-SAVideoPlayer_Tests */,
+				C88AC5CA79B4744B7501BD8D32FD5C24 /* SAVideoPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D0BA7CA94EDE1D65C9BEF7BB8C8590F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				252039C04175EFC5A2B97EC71A081BE4 /* Pods-SAVideoPlayer_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C434F6DA6C22EF9CC93A548C3F67BEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5F63F4B659A807AAAF87E402096F948 /* Pods-SAVideoPlayer_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8FBCC72EECE343097A23C6FC592DE29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C5340CA4ADF98D7BE59EBAB4AD9E7EC /* SABlackMask.m in Sources */,
+				BDA936458B3725519693953841E1E94C /* SACronograph.m in Sources */,
+				451CDA3032E38D5EF378025A095A03BF /* SAURLClicker.m in Sources */,
+				7C3C293D3A8F706F86139C7F2FFA7E91 /* SAVideoPlayer-dummy.m in Sources */,
+				800931841237D0E13ED6061B051B43A1 /* SAVideoPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8C870E0C9F2E0B63A08779AD1B30AB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SAVideoPlayer;
+			target = C88AC5CA79B4744B7501BD8D32FD5C24 /* SAVideoPlayer */;
+			targetProxy = AB77ABC47539DC3F7337098A2BD44518 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12568ACA40B6B1A7D51F037FEA46D654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35DA31C5DB77C193D1DD6FFFB453EAE3 /* Pods-SAVideoPlayer_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		16F5E02314A471CE20454E5733D28837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC74DF78725FC873506A366420FF714E /* SAVideoPlayer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SAVideoPlayer/SAVideoPlayer-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3FA2475660FFC880302AD18E29B2E5FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5EBDD9A276313AAAA40EE62609C9444D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C0D721AB2FBC970C05846CB1722BF6 /* Pods-SAVideoPlayer_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6BFD1AE7C06950F19B07901DFF884524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1EB02607AE4EDAE51C4C23C226AE399 /* Pods-SAVideoPlayer_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7AA44E03F21015C324313A065BA7858E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACECB7C20D0F88D0B6CBD9AA6F53ABE5 /* Pods-SAVideoPlayer_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B53C426F61066FD513B12CAC8EBBC74D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC74DF78725FC873506A366420FF714E /* SAVideoPlayer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SAVideoPlayer/SAVideoPlayer-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F325026B55060D3B22BEC0BAB5FA7344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08DBD44C67ACB0ABEE14585253A39CC4 /* Build configuration list for PBXNativeTarget "Pods-SAVideoPlayer_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BFD1AE7C06950F19B07901DFF884524 /* Debug */,
+				5EBDD9A276313AAAA40EE62609C9444D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA2475660FFC880302AD18E29B2E5FC /* Debug */,
+				F325026B55060D3B22BEC0BAB5FA7344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65A0CCD4F9AA0BD4F979AFC9DAFE3AA1 /* Build configuration list for PBXNativeTarget "Pods-SAVideoPlayer_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AA44E03F21015C324313A065BA7858E /* Debug */,
+				12568ACA40B6B1A7D51F037FEA46D654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2F58AF7C4517D0D07119061169E296C /* Build configuration list for PBXNativeTarget "SAVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53C426F61066FD513B12CAC8EBBC74D /* Debug */,
+				16F5E02314A471CE20454E5733D28837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
