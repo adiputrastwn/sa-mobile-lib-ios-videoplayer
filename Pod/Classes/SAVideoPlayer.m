@@ -51,6 +51,7 @@
 @property (nonatomic, assign) BOOL isMidpointHandled;
 @property (nonatomic, assign) BOOL isThirdQuartileHandled;
 @property (nonatomic, assign) BOOL isEndHandled;
+@property (nonatomic, assign) BOOL is15sHandled;
 
 // notification center reference
 @property (nonatomic, strong) NSNotificationCenter *notif;
@@ -182,7 +183,8 @@
     _isFirstQuartileHandled =
     _isMidpointHandled =
     _isThirdQuartileHandled =
-    _isEndHandled = false;
+    _isEndHandled =
+    _is15sHandled = false;
     
     _isPlaybackBufferEmpty = false;
     _currentReconnectTries = -1;
@@ -462,6 +464,8 @@
                 CGFloat duration = CMTimeGetSeconds(weakSelf.playerItem.duration);
                 NSInteger remaining = (NSInteger)(duration - time);
                 
+                NSLog(@"Video %.2f %.2f", time, duration);
+                
                 // each tick update chrono
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [weakSelf.chrono setTime:remaining];
@@ -486,6 +490,11 @@
                 if (time >= (3 * duration / 4) && !weakSelf.isThirdQuartileHandled) {
                     weakSelf.isThirdQuartileHandled = true;
                     weakSelf.eventHandler(Video_3_4);
+                }
+                
+                if (time >= 15.0f && !weakSelf.is15sHandled) {
+                    weakSelf.is15sHandled = true;
+                    weakSelf.eventHandler(Video_15s);
                 }
             }];
         }

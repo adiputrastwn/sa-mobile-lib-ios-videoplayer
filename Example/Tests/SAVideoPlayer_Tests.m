@@ -26,13 +26,14 @@
 }
 
 - (void) testVideo1 {
-    
+//    
 //    // when
 //    NSString *path = [[NSBundle mainBundle] pathForResource:@"preroll" ofType:@"mp4"];
 //    __block BOOL reachedStart = false;
 //    __block BOOL reached14 = false;
 //    __block BOOL reached12 = false;
 //    __block BOOL reached34 = false;
+//    __block BOOL reached15s = false;
 //    __block BOOL reachedEnd = false;
 //    __block BOOL reachedError = false;
 //    __block int stage = 0;
@@ -71,6 +72,11 @@
 //                stage++;
 //                break;
 //            }
+//            case Video_15s: {
+//                reached15s = true;
+//                stage++;
+//                break;
+//            }
 //            case Video_End: {
 //                reachedEnd = true;
 //                stage++;
@@ -97,8 +103,9 @@
 //            XCTAssertTrue(reached12);
 //            XCTAssertTrue(reached34);
 //            XCTAssertTrue(reachedEnd);
+//            XCTAssertTrue(reached15s);
 //            XCTAssertFalse(reachedError);
-//            XCTAssertEqual(stage, 5);
+//            XCTAssertEqual(stage, 6);
 //        }
 //    }];
 }
@@ -127,6 +134,7 @@
             case Video_1_4:break;
             case Video_1_2:break;
             case Video_3_4:break;
+            case Video_15s:break;
             case Video_End: {
                 [expectation fulfill];
                 break;
@@ -176,6 +184,7 @@
             case Video_1_4:break;
             case Video_1_2:break;
             case Video_3_4:break;
+            case Video_15s:break;
             case Video_End: {
                 [expectation fulfill];
                 break;
@@ -225,6 +234,7 @@
             case Video_1_4:break;
             case Video_1_2:break;
             case Video_3_4:break;
+            case Video_15s:break;
             case Video_End: {
                 [expectation fulfill];
                 break;
@@ -274,6 +284,7 @@
             case Video_1_4:break;
             case Video_1_2:break;
             case Video_3_4:break;
+            case Video_15s:break;
             case Video_End: {
                 [expectation fulfill];
                 break;
