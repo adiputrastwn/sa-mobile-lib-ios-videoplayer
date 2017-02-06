@@ -464,8 +464,6 @@
                 CGFloat duration = CMTimeGetSeconds(weakSelf.playerItem.duration);
                 NSInteger remaining = (NSInteger)(duration - time);
                 
-                NSLog(@"Video %.2f %.2f", time, duration);
-                
                 // each tick update chrono
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [weakSelf.chrono setTime:remaining];
